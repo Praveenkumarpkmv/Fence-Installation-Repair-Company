@@ -1,0 +1,1258 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fence Styles & Designs | Apex Fence Solutions</title>
+  <meta name="description" content="Explore popular fence styles: cedar privacy, horizontal slat, ornamental aluminum, vinyl, chain link, and post-and-rail. Find the right fence for your property.">
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="alternate icon" type="image/png" href="assets/favicon.png">
+  <link rel="apple-touch-icon" href="assets/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; font-size: 16px; }
+    body {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      color: var(--text-primary);
+      background-color: var(--body-bg);
+      line-height: 1.6;
+      overflow-x: hidden;
+      transition: background-color 0.35s ease, color 0.35s ease;
+    }
+    h1, h2, h3, h4 { font-weight: 700; line-height: 1.25; color: var(--text-primary); transition: color 0.35s ease; }
+    a { text-decoration: none; color: inherit; transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1); }
+    img { max-width: 100%; height: auto; display: block; }
+    .container { width: 100%; max-width: 1240px; margin: 0 auto; padding: 0 1.5rem; }
+
+    /* ===== THEME VARIABLES ===== */
+    :root {
+      --primary: #1e3a29;
+      --primary-dark: #122419;
+      --primary-light: #2c543c;
+      --secondary: #c28848;
+      --secondary-hover: #a97338;
+      --dark: #1b2024;
+      --gray-800: #2d3748;
+      --gray-600: #4b5563;
+      --gray-300: #cbd5e1;
+      --gray-100: #f1f5f9;
+      --light: #f8fafc;
+      --white: #ffffff;
+      --surface: #ffffff;
+      --surface-alt: #f8fafc;
+      --body-bg: #ffffff;
+      --text-primary: #1b2024;
+      --text-secondary: #4b5563;
+      --text-muted: #6b7280;
+      --border-color: #e2e8f0;
+      --card-bg: #ffffff;
+      --navbar-bg: #ffffff;
+      --footer-bg: #122419;
+      --hero-overlay: rgba(18, 36, 25, 0.92);
+      --shadow-color: rgba(0, 0, 0, 0.08);
+      --input-bg: #ffffff;
+      --input-border: #cbd5e1;
+      --radius: 10px;
+      --shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.08), 0 8px 10px -6px rgba(0, 0, 0, 0.04);
+      --transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+      --nav-active-bg: rgba(194, 136, 72, 0.12);
+      --nav-active-color: #a97338;
+      --nav-hover-bg: rgba(0, 0, 0, 0.04);
+      --dropdown-bg: #f8fafc;
+      --dropdown-border: #e2e8f0;
+      --dropdown-text: #1e293b;
+      --dropdown-hover-bg: #eef2f6;
+      --dropdown-active-bg: #c28848;
+      --dropdown-active-color: #ffffff;
+    }
+
+    /* ===== DARK MODE ===== */
+    body.dark-mode {
+      background-color: var(--body-bg);
+      color: var(--text-primary);
+      --primary: #c28848;
+      --primary-dark: #0a0f0c;
+      --primary-light: #a97338;
+      --secondary: #e0a458;
+      --secondary-hover: #c28848;
+      --dark: #f1f5f9;
+      --gray-800: #e2e8f0;
+      --gray-600: #a0aec0;
+      --gray-300: #3a4a5a;
+      --gray-100: #1e2a35;
+      --light: #141c24;
+      --white: #0f161d;
+      --surface: #141c24;
+      --surface-alt: #0f161d;
+      --body-bg: #0a0f0c;
+      --text-primary: #f1f5f9;
+      --text-secondary: #a0aec0;
+      --text-muted: #718096;
+      --border-color: #2d3a47;
+      --card-bg: #141c24;
+      --navbar-bg: #0f161d;
+      --footer-bg: #050907;
+      --hero-overlay: rgba(5, 9, 7, 0.92);
+      --shadow-color: rgba(0, 0, 0, 0.4);
+      --input-bg: #1a2530;
+      --input-border: #2d3a47;
+      --shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.5), 0 8px 10px -6px rgba(0, 0, 0, 0.3);
+      --nav-active-bg: rgba(224, 164, 88, 0.18);
+      --nav-active-color: #e0a458;
+      --nav-hover-bg: rgba(255, 255, 255, 0.05);
+      --dropdown-bg: #020617;
+      --dropdown-border: #1e293b;
+      --dropdown-text: #f1f5f9;
+      --dropdown-hover-bg: #0f172a;
+      --dropdown-active-bg: #c28848;
+      --dropdown-active-color: #ffffff;
+    }
+
+    body.dark-mode h1,
+    body.dark-mode h2,
+    body.dark-mode h3,
+    body.dark-mode h4 { color: var(--text-primary); }
+
+    body.dark-mode .page-hero h1,
+    body.dark-mode .site-footer h4,
+    body.dark-mode .site-footer p,
+    body.dark-mode .site-footer a { color: #f1f5f9; }
+
+    /* ===== RTL SUPPORT ===== */
+    [dir="rtl"] .nav-links { direction: rtl; }
+    [dir="rtl"] .footer-col h4::after { left: auto; right: 0; }
+    [dir="rtl"] .footer-links a:hover { padding-left: 0; padding-right: 4px; }
+    [dir="rtl"] .nav-cta { flex-direction: row-reverse; }
+    [dir="rtl"] .btn i { transform: scaleX(-1); }
+    [dir="rtl"] .page-hero { text-align: center; }
+    [dir="rtl"] .style-card-body,
+    [dir="rtl"] .compare-row,
+    [dir="rtl"] .tip-card { text-align: right; }
+    [dir="rtl"] .dropdown-menu { left: auto; right: 0; }
+    [dir="rtl"] .dropdown-item small { text-align: right; }
+    [dir="rtl"] .style-tag { left: auto; right: 1rem; }
+    [dir="rtl"] .compare-col { text-align: right; }
+
+    /* ===== THEME & RTL BUTTONS ===== */
+    .theme-controls { display: flex; align-items: center; gap: 0.4rem; }
+    .icon-btn {
+      width: 38px; height: 38px; border-radius: 50%;
+      border: 1px solid var(--border-color);
+      background: var(--surface);
+      color: var(--text-primary);
+      display: flex; align-items: center; justify-content: center;
+      cursor: pointer; font-size: 0.95rem;
+      transition: var(--transition);
+      flex-shrink: 0;
+    }
+    .icon-btn:hover {
+      background: var(--secondary);
+      color: #fff;
+      border-color: var(--secondary);
+      transform: translateY(-2px);
+    }
+    .icon-btn.active { background: var(--secondary); color: #fff; border-color: var(--secondary); }
+
+    /* ===== BUTTONS ===== */
+    .btn {
+      display: inline-flex; align-items: center; justify-content: center;
+      gap: 0.6rem; padding: 0.85rem 1.8rem; font-size: 0.95rem; font-weight: 600;
+      border-radius: var(--radius); border: 2px solid transparent; cursor: pointer;
+      transition: var(--transition); text-align: center; white-space: nowrap;
+    }
+    .btn-primary { background-color: var(--secondary); color: #fff; }
+    .btn-primary:hover { background-color: var(--secondary-hover); transform: translateY(-2px); box-shadow: 0 10px 20px -5px rgba(194, 136, 72, 0.4); }
+    .btn-outline { background-color: transparent; border-color: #fff; color: #fff; }
+    .btn-outline:hover { background-color: #fff; color: var(--primary); }
+    .btn-dark { background-color: var(--primary); color: #fff; }
+    .btn-dark:hover { background-color: var(--primary-light); transform: translateY(-2px); }
+    body.dark-mode .btn-dark { background-color: var(--secondary); color: #0a0f0c; }
+    body.dark-mode .btn-dark:hover { background-color: var(--secondary-hover); }
+
+    .badge {
+      display: inline-block; padding: 0.35rem 0.9rem; font-size: 0.78rem; font-weight: 700;
+      text-transform: uppercase; letter-spacing: 0.08em; border-radius: 999px;
+      background-color: rgba(194, 136, 72, 0.15); color: var(--secondary); margin-bottom: 0.8rem;
+    }
+    .section-title-wrap { text-align: center; max-width: 720px; margin: 0 auto 3.5rem; }
+    .section-title-wrap h2 { font-size: 2.3rem; margin-bottom: 0.8rem; }
+    .section-title-wrap p { color: var(--text-secondary); font-size: 1.05rem; }
+
+    /* NAVBAR */
+    .navbar {
+      position: sticky; top: 0; z-index: 1000; background-color: var(--navbar-bg);
+      box-shadow: 0 4px 20px rgba(0,0,0,0.06); transition: var(--transition);
+      border-bottom: 1px solid var(--border-color);
+    }
+    .nav-container { display: flex; align-items: center; justify-content: space-between; height: 82px; gap: 0.5rem; }
+    .brand-logo { display: flex; align-items: center; gap: 0.75rem; font-size: 1.45rem; font-weight: 800; color: var(--primary); flex-shrink: 0; }
+    .brand-logo i { font-size: 1.8rem; color: var(--secondary); }
+    .brand-logo span span { color: var(--secondary); }
+    body.dark-mode .brand-logo { color: var(--secondary); }
+
+    /* ===== NAVBAR ACTIONS & NAVIGATION (DESKTOP DEFAULT) ===== */
+    .menu-toggle {
+      display: none;
+      align-items: center;
+      justify-content: center;
+      width: 44px;
+      height: 44px;
+      border-radius: var(--radius);
+      border: 1px solid var(--border-color);
+      background: var(--surface);
+      color: var(--text-primary);
+      font-size: 1.35rem;
+      cursor: pointer;
+      transition: var(--transition);
+    }
+    .menu-toggle:hover {
+      background: var(--secondary);
+      color: #fff;
+      border-color: var(--secondary);
+    }
+    body.dark-mode .menu-toggle {
+      color: var(--text-primary);
+    }
+
+    /* DESKTOP NAV WRAPPER (TOPICS VISIBLE HORIZONTALLY) */
+    .nav-menu-wrapper {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      flex: 1;
+      gap: 1.25rem;
+      background: transparent;
+      box-shadow: none;
+      border: none;
+      padding: 0;
+      position: static;
+      width: auto;
+      max-width: none;
+      max-height: none;
+      overflow: visible;
+      z-index: 1001;
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      list-style: none;
+      gap: 0.35rem;
+      margin: 0;
+      padding: 0;
+      flex-direction: row;
+      width: auto;
+    }
+    .nav-item { position: relative; width: auto; }
+    .nav-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.35rem;
+      padding: 0.5rem 0.7rem;
+      font-size: 0.92rem;
+      font-weight: 600;
+      color: var(--text-primary);
+      border-radius: 8px;
+      transition: var(--transition);
+      text-decoration: none;
+      white-space: nowrap;
+    }
+    .nav-link:hover {
+      color: var(--secondary);
+      background-color: var(--nav-hover-bg);
+    }
+    .nav-link.active {
+      color: var(--nav-active-color);
+      background-color: var(--nav-active-bg);
+      font-weight: 700;
+    }
+
+    /* DROPDOWN (DESKTOP HOVER) */
+    .dropdown { position: relative; }
+    .dropdown-toggle { cursor: pointer; }
+    .dropdown-toggle i { font-size: 0.75rem; transition: transform 0.2s ease; }
+    .dropdown:hover .dropdown-toggle i { transform: rotate(180deg); }
+    .dropdown-menu {
+      position: absolute;
+      top: calc(100% + 6px);
+      left: 0;
+      width: 180px;
+      background: var(--dropdown-bg);
+      border-radius: 12px;
+      box-shadow: 0 15px 35px rgba(0, 0, 0, 0.18);
+      border: 1px solid var(--dropdown-border);
+      padding: 0.4rem;
+      opacity: 0;
+      visibility: hidden;
+      transform: translateY(8px);
+      transition: all 0.22s cubic-bezier(0.16, 1, 0.3, 1);
+      z-index: 1002;
+      display: flex;
+      flex-direction: column;
+      gap: 0.25rem;
+    }
+    [dir="rtl"] .dropdown-menu { left: auto; right: 0; }
+    .dropdown:hover .dropdown-menu {
+      opacity: 1;
+      visibility: visible;
+      transform: translateY(0);
+      pointer-events: auto;
+    }
+    .dropdown-item {
+      display: block;
+      padding: 0.6rem 0.85rem;
+      font-size: 0.9rem;
+      font-weight: 600;
+      color: var(--dropdown-text);
+      text-decoration: none;
+      border-radius: 6px;
+      transition: background 0.2s ease, color 0.2s ease;
+      cursor: pointer;
+    }
+    .dropdown-item:hover {
+      background-color: var(--dropdown-hover-bg);
+      color: var(--secondary);
+    }
+    .dropdown-item.active {
+      background-color: var(--dropdown-active-bg);
+      color: var(--dropdown-active-color);
+      font-weight: 700;
+    }
+
+    /* DESKTOP ACTIONS: CTA BUTTON + THEME/RTL */
+    .nav-drawer-actions {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      border: none;
+      padding: 0;
+      margin: 0;
+      width: auto;
+    }
+    .nav-drawer-cta {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.5rem;
+      padding: 0.6rem 1.25rem;
+      font-size: 0.88rem;
+      white-space: nowrap;
+      width: auto;
+    }
+    .theme-controls {
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+      width: auto;
+    }
+    .theme-controls .icon-btn {
+      width: 38px;
+      height: 38px;
+      font-size: 0.95rem;
+    }
+
+    /* RESPONSIVE NAVBAR: IPAD (PRO 13 VERTICAL/HORIZONTAL) & MOBILE (<= 1380px) */
+    @media (max-width: 1380px) {
+      .menu-toggle {
+        display: flex;
+      }
+      .nav-menu-wrapper {
+        display: none;
+        position: fixed;
+        top: 86px;
+        right: 2rem;
+        width: 340px;
+        max-width: calc(100vw - 2rem);
+        background: var(--navbar-bg);
+        flex-direction: column;
+        padding: 1.5rem;
+        border-radius: 16px;
+        box-shadow: 0 20px 45px rgba(0, 0, 0, 0.25);
+        border: 1px solid var(--border-color);
+        max-height: calc(100vh - 105px);
+        overflow-y: auto;
+        gap: 0.75rem;
+        z-index: 1001;
+      }
+      [dir="rtl"] .nav-menu-wrapper {
+        right: auto;
+        left: 2rem;
+      }
+      .nav-menu-wrapper.mobile-open {
+        display: flex !important;
+        animation: menuSlideDown 0.22s cubic-bezier(0.16, 1, 0.3, 1);
+      }
+      @keyframes menuSlideDown {
+        from { opacity: 0; transform: translateY(-8px); }
+        to { opacity: 1; transform: translateY(0); }
+      }
+      .nav-links {
+        flex-direction: column;
+        width: 100%;
+        gap: 0.25rem;
+        align-items: stretch;
+      }
+      .nav-item {
+        width: 100%;
+      }
+      .nav-link {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        padding: 0.75rem 0.85rem;
+        font-size: 1rem;
+      }
+      .nav-link.active {
+        border-left: 3px solid var(--secondary);
+        padding-left: 1rem;
+      }
+      [dir="rtl"] .nav-link.active {
+        border-left: none;
+        border-right: 3px solid var(--secondary);
+        padding-left: 0.85rem;
+        padding-right: 1rem;
+      }
+      .dropdown-menu {
+        position: static;
+        opacity: 1;
+        visibility: visible;
+        transform: none;
+        box-shadow: none;
+        border: 1px solid var(--dropdown-border);
+        margin: 0.4rem 0 0.6rem;
+        width: 100%;
+        border-radius: 12px;
+      }
+      .dropdown-item {
+        padding: 0.75rem 1rem;
+        font-size: 0.95rem;
+      }
+      .dropdown-item:not(:last-child) {
+        border-bottom: 1px solid var(--dropdown-border);
+      }
+      .dropdown-item.active {
+        border-left: 3px solid var(--secondary);
+        padding-left: 1.15rem;
+      }
+      [dir="rtl"] .dropdown-item.active {
+        border-left: none;
+        border-right: 3px solid var(--secondary);
+        padding-left: 1rem;
+        padding-right: 1.15rem;
+      }
+      .nav-drawer-actions {
+        display: flex;
+        flex-direction: column;
+        gap: 0.85rem;
+        width: 100%;
+        padding-top: 1rem;
+        border-top: 1px solid var(--border-color);
+        margin-top: 0.5rem;
+      }
+      .nav-drawer-cta {
+        width: 100%;
+        justify-content: center;
+        padding: 0.85rem 1.5rem;
+        font-size: 0.95rem;
+      }
+      .theme-controls {
+        display: flex;
+        justify-content: center;
+        gap: 0.85rem;
+        width: 100%;
+      }
+      .theme-controls .icon-btn {
+        width: 42px;
+        height: 42px;
+        font-size: 1rem;
+      }
+    }
+
+    /* FULL WIDTH DRAWER ON PHONES (<= 820px) */
+    @media (max-width: 820px) {
+      .nav-menu-wrapper {
+        top: 82px;
+        left: 0;
+        right: 0;
+        width: 100%;
+        max-width: 100%;
+        border-radius: 0 0 16px 16px;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        border-bottom: 2px solid var(--secondary);
+        padding: 1.5rem 1.5rem 2rem;
+      }
+      [dir="rtl"] .nav-menu-wrapper {
+        left: 0;
+        right: 0;
+      }
+    }
+
+    /* PAGE HERO */
+    .page-hero {
+      position: relative; background-size: cover; background-position: center;
+      color: #fff; padding: 5.5rem 0 5rem; min-height: 420px; display: flex; align-items: center; justify-content: center;
+      text-align: center;
+      background: linear-gradient(rgba(18, 36, 25, 0.88), rgba(18, 36, 25, 0.88)),
+                  url('assets/fs2.avif') center/cover no-repeat;
+    }
+    body.dark-mode .page-hero {
+      background: linear-gradient(rgba(5, 9, 7, 0.92), rgba(5, 9, 7, 0.92)),
+                  url('assets/fs2.avif') center/cover no-repeat;
+    }
+    [dir="rtl"] .page-hero {
+      text-align: center;
+      background: linear-gradient(rgba(18, 36, 25, 0.88), rgba(18, 36, 25, 0.88)),
+                  url('assets/fs2.avif') center/cover no-repeat;
+    }
+    .page-hero-content { max-width: 820px; margin: 0 auto; text-align: center; z-index: 2; }
+    .page-hero h1 { font-size: 3rem; color: #fff; margin-bottom: 1rem; line-height: 1.15; }
+    .page-hero h1 span { color: var(--secondary); }
+    .page-hero p { font-size: 1.1rem; color: rgba(255,255,255,0.9); margin-bottom: 0; max-width: 680px; margin-left: auto; margin-right: auto; }
+
+    section { padding: 5rem 0; }
+
+    /* SECTION 2: STYLE CATALOG */
+    .catalog-bg { background: var(--body-bg); }
+    .catalog-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem; }
+    .style-card { background: var(--card-bg); border-radius: 14px; overflow: hidden; box-shadow: var(--shadow); transition: var(--transition); display: flex; flex-direction: column; border: 1px solid var(--border-color); }
+    .style-card:hover { transform: translateY(-8px); box-shadow: 0 20px 30px rgba(0,0,0,0.1); }
+    .style-card-img { position: relative; height: 230px; overflow: hidden; }
+    .style-card-img img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s ease; }
+    .style-card:hover .style-card-img img { transform: scale(1.06); }
+    .style-tag { position: absolute; top: 1rem; left: 1rem; background: rgba(30, 58, 41, 0.9); color: #fff; font-size: 0.75rem; font-weight: 700; padding: 0.35rem 0.8rem; border-radius: 999px; }
+    .style-card-body { padding: 1.8rem; display: flex; flex-direction: column; flex-grow: 1; }
+    .style-card-body h3 { font-size: 1.35rem; margin-bottom: 0.6rem; }
+    .style-card-body p { color: var(--text-secondary); font-size: 0.92rem; margin-bottom: 1.4rem; flex-grow: 1; }
+    .style-card-meta { display: flex; justify-content: space-between; align-items: center; padding-top: 1rem; border-top: 1px solid var(--border-color); font-size: 0.85rem; color: var(--text-secondary); }
+    .style-card-meta span strong { color: var(--secondary); }
+
+    /* SECTION 3: COMPARISON TABLE */
+    .compare-bg { background: var(--surface-alt); }
+    .compare-table-wrap { background: var(--card-bg); border-radius: 16px; box-shadow: var(--shadow); border: 1px solid var(--border-color); overflow: hidden; }
+    .compare-table { width: 100%; border-collapse: collapse; }
+    .compare-table thead th {
+      background: var(--primary-dark); color: #fff; font-size: 0.85rem; font-weight: 700;
+      text-transform: uppercase; letter-spacing: 0.05em; padding: 1rem 1.2rem; text-align: left;
+    }
+    body.dark-mode .compare-table thead th { background: #050907; }
+    [dir="rtl"] .compare-table thead th { text-align: right; }
+    .compare-table tbody td { padding: 1rem 1.2rem; font-size: 0.9rem; color: var(--text-primary); border-bottom: 1px solid var(--border-color); }
+    .compare-table tbody tr:last-child td { border-bottom: none; }
+    .compare-table tbody tr:hover { background: var(--surface-alt); }
+    .compare-table .col-name { font-weight: 700; color: var(--text-primary); }
+    .compare-table .rating-stars { color: var(--secondary); font-size: 0.85rem; letter-spacing: 0.1em; }
+
+    /* SECTION 4: DESIGN TIPS */
+    .tips-bg { background: var(--body-bg); }
+    .tips-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem; }
+    .tip-card {
+      background: var(--card-bg); border-radius: 14px; padding: 2.2rem 1.8rem;
+      box-shadow: var(--shadow); border: 1px solid var(--border-color);
+      border-bottom: 4px solid transparent; transition: var(--transition);
+    }
+    .tip-card:hover { transform: translateY(-6px); border-bottom-color: var(--secondary); }
+    .tip-icon {
+      width: 60px; height: 60px; border-radius: 14px; background: rgba(194, 136, 72, 0.12);
+      color: var(--secondary); display: flex; align-items: center; justify-content: center;
+      font-size: 1.6rem; margin-bottom: 1.3rem;
+    }
+    .tip-card h3 { font-size: 1.2rem; margin-bottom: 0.6rem; }
+    .tip-card p { color: var(--text-secondary); font-size: 0.9rem; margin: 0; }
+
+    /* SECTION 5: STYLE SELECTOR CTA */
+    .selector-bg { background: var(--primary-dark); color: #fff; }
+    body.dark-mode .selector-bg { background: #0a0f0c; }
+    .selector-inner { display: grid; grid-template-columns: 1.1fr 1fr; gap: 4rem; align-items: center; }
+    .selector-text h2 { color: #fff; font-size: 2.3rem; margin-bottom: 1rem; }
+    .selector-text p { color: rgba(255,255,255,0.8); font-size: 1rem; margin-bottom: 1.5rem; }
+    .selector-list { list-style: none; margin-bottom: 2rem; }
+    .selector-list li { display: flex; align-items: center; gap: 0.7rem; margin-bottom: 0.8rem; color: rgba(255,255,255,0.9); font-size: 0.95rem; }
+    .selector-list i { color: var(--secondary); }
+    .selector-actions { display: flex; flex-wrap: wrap; gap: 1rem; }
+    .selector-img {
+      border-radius: 16px; box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+      width: 100%; height: 380px; object-fit: cover;
+    }
+
+    /* SECTION 6: STYLE & CODE GUIDE FAQ (SIMPLE TEXT CONTENT) */
+    .style-faq-bg {
+      background: var(--surface-alt);
+      padding: 5rem 0;
+      border-top: 1px solid var(--border-color);
+    }
+    .style-faq-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1.5rem;
+      margin-top: 2.5rem;
+    }
+    .style-faq-card {
+      background: var(--card-bg);
+      border: 1px solid var(--border-color);
+      border-radius: 14px;
+      padding: 1.8rem 1.6rem;
+      box-shadow: var(--shadow);
+      transition: var(--transition);
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+    }
+    .style-faq-card:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 15px 30px rgba(0, 0, 0, 0.08);
+      border-color: var(--secondary);
+    }
+    .style-faq-header {
+      display: flex;
+      align-items: flex-start;
+      gap: 0.85rem;
+      margin-bottom: 0.85rem;
+      min-height: 3.2rem;
+    }
+    .style-faq-icon {
+      width: 44px;
+      height: 44px;
+      border-radius: 10px;
+      background: rgba(194, 136, 72, 0.12);
+      color: var(--secondary);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.25rem;
+      flex-shrink: 0;
+      margin-top: 0.15rem;
+    }
+    .style-faq-header h3 {
+      font-size: 1.15rem;
+      color: var(--text-primary);
+      margin: 0;
+      line-height: 1.35;
+    }
+    .style-faq-card p {
+      font-size: 0.92rem;
+      color: var(--text-secondary);
+      line-height: 1.65;
+      margin: 0 0 1.2rem 0;
+      flex-grow: 1;
+    }
+    .style-faq-tip {
+      font-size: 0.82rem;
+      font-weight: 600;
+      color: var(--secondary);
+      margin-top: auto;
+      min-height: 2.75rem;
+      display: flex;
+      align-items: flex-start;
+      gap: 0.45rem;
+      line-height: 1.45;
+    }
+    .style-faq-tip i {
+      margin-top: 0.15rem;
+      flex-shrink: 0;
+    }
+    .style-faq-footer {
+      margin-top: 2.5rem;
+      padding: 1.6rem 2rem;
+      background: var(--card-bg);
+      border: 1px dashed var(--secondary);
+      border-radius: 14px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1.5rem;
+      flex-wrap: wrap;
+    }
+    .style-faq-footer-text h4 {
+      font-size: 1.1rem;
+      color: var(--text-primary);
+      margin-bottom: 0.25rem;
+    }
+    .style-faq-footer-text p {
+      font-size: 0.88rem;
+      color: var(--text-secondary);
+      margin: 0;
+    }
+
+    /* FOOTER */
+    .site-footer { background-color: var(--footer-bg); color: rgba(255,255,255,0.75); padding: 4rem 0 2rem; border-top: 1px solid rgba(255,255,255,0.06); }
+    .footer-grid { display: grid; grid-template-columns: 1.5fr 1fr 1fr 1.2fr; gap: 2.5rem; margin-bottom: 3rem; }
+    .footer-col h4 { color: #fff; font-size: 1.15rem; margin-bottom: 1.3rem; position: relative; }
+    .footer-col h4::after { content: ''; position: absolute; left: 0; bottom: -0.4rem; width: 32px; height: 2px; background: var(--secondary); }
+    .footer-col p { font-size: 0.9rem; line-height: 1.6; margin-bottom: 1rem; }
+    .footer-links { list-style: none; }
+    .footer-links li { margin-bottom: 0.7rem; }
+    .footer-links a { font-size: 0.9rem; transition: var(--transition); }
+    .footer-links a:hover { color: var(--secondary); padding-left: 4px; }
+    .footer-socials { display: flex; gap: 0.75rem; margin-top: 1.2rem; }
+    .social-btn { width: 38px; height: 38px; border-radius: 50%; background: rgba(255,255,255,0.08); display: flex; align-items: center; justify-content: center; color: #fff; transition: var(--transition); }
+    .social-btn:hover { background: var(--secondary); color: #fff; transform: translateY(-2px); }
+    .footer-bottom { padding-top: 2rem; border-top: 1px solid rgba(255,255,255,0.08); display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 1rem; font-size: 0.85rem; }
+
+    /* RESPONSIVE */
+    @media (max-width: 1100px) {
+      .catalog-grid { grid-template-columns: repeat(2, 1fr); }
+      .tips-grid { grid-template-columns: repeat(2, 1fr); }
+      
+      .selector-inner { grid-template-columns: 1fr; gap: 3rem; }
+      .footer-grid { grid-template-columns: repeat(2, 1fr); }
+    }
+
+            @media (max-width: 820px) {
+      .page-hero { min-height: 360px; padding: 3.5rem 0; }
+      .page-hero h1 { font-size: 2.2rem; }
+      .catalog-grid, .tips-grid { grid-template-columns: 1fr; } .style-faq-grid { grid-template-columns: 1fr; } .style-faq-header { min-height: auto; } .style-faq-tip { min-height: auto; } .style-faq-footer { flex-direction: column; align-items: flex-start; text-align: left; } [dir="rtl"] .style-faq-footer { align-items: flex-end; text-align: right; }
+      .compare-table-wrap { overflow-x: auto; }
+      .compare-table { min-width: 640px; }
+      .footer-grid { grid-template-columns: 1fr; }
+      .section-title-wrap h2 { font-size: 1.9rem; }
+      .selector-text h2 { font-size: 1.9rem; }
+      .selector-img { height: 300px; }
+    }
+
+    @media (max-width: 600px) {
+      .nav-container { height: 72px; }
+      .nav-menu-wrapper { top: 72px; max-height: calc(100vh - 72px); }
+      .page-hero h1 { font-size: 1.8rem; }
+      .section-title-wrap h2 { font-size: 1.6rem; }
+      .brand-logo { font-size: 1.1rem; gap: 0.4rem; }
+      .brand-logo i { font-size: 1.3rem; }
+    }
+    @media (max-width: 480px) {
+      .page-hero h1 { font-size: 1.6rem; }
+      .section-title-wrap h2 { font-size: 1.45rem; }
+      .section-title-wrap p { font-size: 0.92rem; }
+      .container { padding: 0 1rem; }
+      .selector-actions .btn { width: 100%; }
+      .style-faq-card { padding: 1.4rem 1.2rem; } .style-faq-header h3 { font-size: 1.05rem; } .style-faq-card p { font-size: 0.88rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAVIGATION (same as index) -->
+  <header class="navbar">
+    <div class="container nav-container">
+      <a href="index.html" class="brand-logo">
+        <i class="fa-solid fa-vector-square"></i>
+        <span>Apex<span>Fence</span></span>
+      </a>
+
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle Navigation Menu">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+
+      <!-- Navigation Menu Drawer (slides down when hamburger is clicked) -->
+      <div class="nav-menu-wrapper" id="navMenu">
+        <ul class="nav-links" id="navLinks">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="index.html">
+            Home <i class="fa-solid fa-chevron-down"></i>
+          </a>
+          <div class="dropdown-menu">
+            <a href="index.html" class="dropdown-item">Home 1</a>
+            <a href="home-2.html" class="dropdown-item">Home 2</a>
+          </div>
+        </li>
+        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+        <li class="nav-item"><a class="nav-link active" href="fence-styles.html">Fence Styles</a></li>
+        <li class="nav-item"><a class="nav-link" href="materials.html">Materials</a></li>
+        <li class="nav-item"><a class="nav-link" href="services.html">Install & Repair</a></li>
+        <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+        <li class="nav-item"><a class="nav-link" href="pricing.html">Pricing</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+      </ul>
+
+        <div class="nav-drawer-actions">
+          <a href="contact.html#measurement" class="btn btn-primary nav-drawer-cta">
+            <i class="fa-solid fa-ruler-combined"></i> <span>Free Measurement</span>
+          </a>
+          <div class="theme-controls">
+            <button class="icon-btn" id="rtlToggle" title="Toggle RTL/LTR" aria-label="Toggle text direction">
+              <i class="fa-solid fa-right-left"></i>
+            </button>
+            <button class="icon-btn" id="themeToggle" title="Toggle Dark/Light Mode" aria-label="Toggle dark mode">
+              <i class="fa-solid fa-moon"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- 1. PAGE HERO -->
+  <section class="page-hero">
+    <div class="container">
+      <div class="page-hero-content">
+        <div class="badge"><i class="fa-solid fa-compass"></i> Fence Styles & Designs</div>
+        <h1>Find the <span>Perfect Fence</span> for Your Property.</h1>
+        <p>From classic cedar privacy to modern horizontal slats and ornamental aluminum — explore the styles our customers love most, with real specs and honest guidance.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 2. STYLE CATALOG -->
+  <section id="style-catalog" class="catalog-bg">
+    <div class="container">
+      <div class="section-title-wrap">
+        <div class="badge">Popular Styles</div>
+        <h2>Explore Our Fence Styles</h2>
+        <p>Six of our most-requested designs — each available in multiple heights, materials, and finishes.</p>
+      </div>
+
+      <div class="catalog-grid">
+        <div class="style-card">
+          <div class="style-card-img">
+            <span class="style-tag">Most Popular</span>
+            <img src="assets/fs3.jpeg" alt="Full board privacy wood fence">
+          </div>
+          <div class="style-card-body">
+            <h3>Full Board Wood Privacy</h3>
+            <p>Tongue & groove or board-on-board cedar design giving 100% visual privacy, wind-buffer, and acoustic noise reduction for busy neighborhoods.</p>
+            <div class="style-card-meta"><span>Height: <strong>6ft - 8ft</strong></span><span>Lifespan: <strong>20-25 yrs</strong></span></div>
+          </div>
+        </div>
+
+        <div class="style-card">
+          <div class="style-card-img">
+            <span class="style-tag">Modern</span>
+            <img src="assets/fs4.jpeg" alt="Modern horizontal slat fence">
+          </div>
+          <div class="style-card-body">
+            <h3>Horizontal Slat Privacy</h3>
+            <p>Clean, contemporary horizontal planks with precision spacers. Matches mid-century modern and modern farmhouse aesthetics flawlessly.</p>
+            <div class="style-card-meta"><span>Height: <strong>5ft - 7ft</strong></span><span>Lifespan: <strong>25+ yrs</strong></span></div>
+          </div>
+        </div>
+
+        <div class="style-card">
+          <div class="style-card-img">
+            <span class="style-tag">Pool & Estate</span>
+            <img src="assets/fs5.jpeg" alt="Ornamental black aluminum fence">
+          </div>
+          <div class="style-card-body">
+            <h3>Ornamental Metal & Iron</h3>
+            <p>Elegant spear-top or flat-top powder-coated aluminum that delivers stately perimeter protection with zero rust or repainting required.</p>
+            <div class="style-card-meta"><span>Height: <strong>4ft - 6ft</strong></span><span>Lifespan: <strong>Lifetime</strong></span></div>
+          </div>
+        </div>
+
+        <div class="style-card">
+          <div class="style-card-img">
+            <span class="style-tag">Zero Maintenance</span>
+            <img src="assets/fs6.jpeg" alt="Classic white vinyl fence">
+          </div>
+          <div class="style-card-body">
+            <h3>Seamless Vinyl Privacy</h3>
+            <p>Virgin UV-stabilized PVC composite that will never rot, warp, crack, or require staining. Wash down with a garden hose for year-round brilliance.</p>
+            <div class="style-card-meta"><span>Height: <strong>4ft - 6ft</strong></span><span>Lifespan: <strong>30+ yrs</strong></span></div>
+          </div>
+        </div>
+
+        <div class="style-card">
+          <div class="style-card-img">
+            <span class="style-tag">High Security</span>
+            <img src="assets/fs7.jpeg" alt="Black vinyl coated chain link fence">
+          </div>
+          <div class="style-card-body">
+            <h3>Black Vinyl Chain Link</h3>
+            <p>Durable galvanized woven mesh dipped in protective black vinyl. Blends discreetly into landscaping while offering dependable containment.</p>
+            <div class="style-card-meta"><span>Height: <strong>4ft - 10ft</strong></span><span>Lifespan: <strong>25+ yrs</strong></span></div>
+          </div>
+        </div>
+
+        <div class="style-card">
+          <div class="style-card-img">
+            <span class="style-tag">Acreage</span>
+            <img src="assets/fs8.jpeg" alt="Post and rail fence">
+          </div>
+          <div class="style-card-body">
+            <h3>Post & Rail Acreage</h3>
+            <p>Heavy split-rail or round-post fencing with optional wire backing. Ideal for large lots, pastures, farm boundaries, and dog enclosures.</p>
+            <div class="style-card-meta"><span>Height: <strong>3ft - 5ft</strong></span><span>Lifespan: <strong>20+ yrs</strong></span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3. STYLE COMPARISON -->
+  <section id="style-comparison" class="compare-bg">
+    <div class="container">
+      <div class="section-title-wrap">
+        <div class="badge">Side-by-Side</div>
+        <h2>Compare Fence Styles</h2>
+        <p>Quick-reference comparison of the six most popular styles across privacy, maintenance, cost, and lifespan.</p>
+      </div>
+
+      <div class="compare-table-wrap">
+        <table class="compare-table">
+          <thead>
+            <tr>
+              <th>Style</th>
+              <th>Privacy</th>
+              <th>Maintenance</th>
+              <th>Cost / ft</th>
+              <th>Lifespan</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="col-name">Full Board Cedar Privacy</td>
+              <td><span class="rating-stars">★★★★★</span></td>
+              <td>Medium (stain every 3-4 yrs)</td>
+              <td>$34 – $48</td>
+              <td>20–25 yrs</td>
+            </tr>
+            <tr>
+              <td class="col-name">Horizontal Slat</td>
+              <td><span class="rating-stars">★★★★☆</span></td>
+              <td>Medium (seal every 3 yrs)</td>
+              <td>$45 – $60</td>
+              <td>25+ yrs</td>
+            </tr>
+            <tr>
+              <td class="col-name">Ornamental Aluminum</td>
+              <td><span class="rating-stars">★★☆☆☆</span></td>
+              <td>Low (wash occasionally)</td>
+              <td>$45 – $65</td>
+              <td>Lifetime</td>
+            </tr>
+            <tr>
+              <td class="col-name">Seamless Vinyl Privacy</td>
+              <td><span class="rating-stars">★★★★★</span></td>
+              <td>None (hose off)</td>
+              <td>$40 – $55</td>
+              <td>30+ yrs</td>
+            </tr>
+            <tr>
+              <td class="col-name">Black Vinyl Chain Link</td>
+              <td><span class="rating-stars">★★☆☆☆</span></td>
+              <td>Very Low</td>
+              <td>$18 – $28</td>
+              <td>25+ yrs</td>
+            </tr>
+            <tr>
+              <td class="col-name">Post & Rail Acreage</td>
+              <td><span class="rating-stars">★☆☆☆☆</span></td>
+              <td>Low (inspect annually)</td>
+              <td>$20 – $35</td>
+              <td>20+ yrs</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4. DESIGN TIPS -->
+  <section id="design-tips" class="tips-bg">
+    <div class="container">
+      <div class="section-title-wrap">
+        <div class="badge">Expert Guidance</div>
+        <h2>How to Choose the Right Fence Style</h2>
+        <p>Three things to consider before you pick a style — learned from 25 years on the job.</p>
+      </div>
+
+      <div class="tips-grid">
+        <div class="tip-card">
+          <div class="tip-icon"><i class="fa-solid fa-house-chimney"></i></div>
+          <h3>Match Your Architecture</h3>
+          <p>A horizontal slat fence suits a mid-century modern home. A white vinyl picket fits a cottage. A stately aluminum fence complements a colonial estate. Style should feel intentional, not accidental.</p>
+        </div>
+
+        <div class="tip-card">
+          <div class="tip-icon"><i class="fa-solid fa-eye-slash"></i></div>
+          <h3>Decide Your Privacy Level</h3>
+          <p>Full board and vinyl give 100% privacy. Horizontal slat is around 90%. Aluminum and chain link are see-through. Be honest about how much privacy you actually need — it drives both style and cost.</p>
+        </div>
+
+        <div class="tip-card">
+          <div class="tip-icon"><i class="fa-solid fa-wallet"></i></div>
+          <h3>Budget Beyond Year One</h3>
+          <p>Cedar is warm but needs staining. Vinyl costs more upfront but zero maintenance. Aluminum lasts a lifetime but has a higher install cost. Think about total cost of ownership, not just the quote.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5. STYLE SELECTOR CTA -->
+  <section id="style-selector" class="selector-bg">
+    <div class="container selector-inner">
+      <div class="selector-text">
+        <div class="badge" style="background: rgba(194, 136, 72, 0.25);">Free Consultation</div>
+        <h2>Not Sure Which Style Fits?</h2>
+        <p>Our master estimator will bring physical material samples to your property, measure your boundary, and help you choose a style that fits your home, budget, and privacy needs.</p>
+        <ul class="selector-list">
+          <li><i class="fa-solid fa-check-circle"></i> Free on-site measurement with laser precision</li>
+          <li><i class="fa-solid fa-check-circle"></i> Physical samples of every style and finish</li>
+          <li><i class="fa-solid fa-check-circle"></i> Honest advice — no pressure, no upsell</li>
+          <li><i class="fa-solid fa-check-circle"></i> HOA and permit guidance included</li>
+        </ul>
+        <div class="selector-actions">
+          <a href="contact.html#measurement" class="btn btn-primary"><i class="fa-solid fa-ruler-combined"></i> Book Free Consultation</a>
+          <a href="gallery.html" class="btn btn-outline"><i class="fa-solid fa-images"></i> See Real Projects</a>
+        </div>
+      </div>
+      <div>
+        <img src="assets/fs1.avif" alt="Modern fence style sample" class="selector-img">
+      </div>
+    </div>
+  </section>
+
+  <!-- 6. STYLE & CODE GUIDE FAQ (SIMPLE TEXT CONTENT) -->
+  <section id="style-faq" class="style-faq-bg">
+    <div class="container">
+      <div class="section-title-wrap">
+        <div class="badge"><i class="fa-solid fa-circle-question"></i> Style & Code Guide</div>
+        <h2>Fence Styles, HOA Codes & Permitting FAQ</h2>
+        <p>Essential guidance on orientation, height limits, HOA submissions, and zoning bylaws to help you choose the right fence with confidence.</p>
+      </div>
+
+      <div class="style-faq-grid">
+        <div class="style-faq-card">
+          <div class="style-faq-header">
+            <div class="style-faq-icon"><i class="fa-solid fa-people-arrows"></i></div>
+            <h3>Which side of the fence has to face my neighbor?</h3>
+          </div>
+          <p>Under municipal "Good Neighbor" ordinances and standard building conventions, the finished, smooth side of pickets must face outward toward adjacent properties and the street, with structural rails and posts remaining on the inside. Double-sided board-on-board and horizontal styles offer finished boards on both sides so both you and your neighbors enjoy an identical, flawless view.</p>
+          <div class="style-faq-tip"><i class="fa-solid fa-lightbulb"></i> Apex Pro Tip: Board-on-Board avoids neighbor disputes entirely.</div>
+        </div>
+
+        <div class="style-faq-card">
+          <div class="style-faq-header">
+            <div class="style-faq-icon"><i class="fa-solid fa-ruler-vertical"></i></div>
+            <h3>What are the standard residential height restrictions?</h3>
+          </div>
+          <p>Standard zoning codes permit up to 6 feet in rear and side yards for private outdoor living spaces, and up to 3 or 4 feet in front yards to preserve vehicular line-of-sight near driveways and intersections. Corner lots often require specialized sight-triangle setbacks. We verify every township code before finalizing your layout.</p>
+          <div class="style-faq-tip"><i class="fa-solid fa-lightbulb"></i> Apex Pro Tip: 8ft privacy fences are permitted with variance approval.</div>
+        </div>
+
+        <div class="style-faq-card">
+          <div class="style-faq-header">
+            <div class="style-faq-icon"><i class="fa-solid fa-water-ladder"></i></div>
+            <h3>What styles meet swimming pool enclosure safety codes?</h3>
+          </div>
+          <p>National BOCA and International Building Code (IBC) pool regulations mandate a minimum fence height of 48 to 54 inches, picket spacing narrower than 4 inches, and no exterior footholds. Gates must swing outward away from the water and feature self-closing hinges with magnetic latches mounted at least 54 inches high. Our Ornamental Aluminum and Solid Vinyl lines are 100% pool-code certified.</p>
+          <div class="style-faq-tip"><i class="fa-solid fa-lightbulb"></i> Apex Pro Tip: 54" Flat-Top Aluminum is the #1 choice for pools.</div>
+        </div>
+
+        <div class="style-faq-card">
+          <div class="style-faq-header">
+            <div class="style-faq-icon"><i class="fa-solid fa-layer-group"></i></div>
+            <h3>Can I combine two different fence styles on one property?</h3>
+          </div>
+          <p>Blending styles is one of the most effective ways to balance curb appeal and budget. Many homeowners choose decorative black ornamental aluminum along front boundaries and pool areas to preserve scenic views, while transitioning seamlessly to 6ft cedar or vinyl privacy fencing along property lines where seclusion is needed.</p>
+          <div class="style-faq-tip"><i class="fa-solid fa-lightbulb"></i> Apex Pro Tip: Custom transition posts bridge wood to aluminum cleanly.</div>
+        </div>
+
+        <div class="style-faq-card">
+          <div class="style-faq-header">
+            <div class="style-faq-icon"><i class="fa-solid fa-file-shield"></i></div>
+            <h3>How do I handle HOA Architectural Review Board approval?</h3>
+          </div>
+          <p>Most planned developments require an application package with material cut sheets, height specifications, property survey maps, and finish colors. Apex Fence Solutions provides pre-packaged HOA submission packets with stamped engineering specifications, helping 99% of our clients receive first-round approval without delays.</p>
+          <div class="style-faq-tip"><i class="fa-solid fa-lightbulb"></i> Apex Pro Tip: We draft and sign HOA review packets at no added charge.</div>
+        </div>
+
+        <div class="style-faq-card">
+          <div class="style-faq-header">
+            <div class="style-faq-icon"><i class="fa-solid fa-shield-halved"></i></div>
+            <h3>How are posts anchored to prevent wind lean and frost heave?</h3>
+          </div>
+          <p>Every post is machine-augured 36 to 42 inches into the ground—well below local winter frost lines. We pour 120 lbs of high-density commercial concrete per post with bell-shaped bottom footings that anchor firmly against ground shifting, ensuring straight, plumb posts that withstand sustained 100+ mph gusts.</p>
+          <div class="style-faq-tip"><i class="fa-solid fa-lightbulb"></i> Apex Pro Tip: Backed by our Lifetime Gate Sag & Post Stability Guarantee.</div>
+        </div>
+      </div>
+
+      <div class="style-faq-footer">
+        <div class="style-faq-footer-text">
+          <h4>Have a unique property layout, slope, or custom code question?</h4>
+          <p>Our master estimators carry regional zoning books, physical material samples, and laser distance tools to your consultation.</p>
+        </div>
+        <a href="contact.html#measurement" class="btn btn-primary" style="white-space: nowrap;">
+          <i class="fa-solid fa-ruler-combined"></i> Book Free Consultation
+        </a>
+      </div>
+    </div>
+  </section>
+<!-- FOOTER (same as index) -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <a href="index.html" class="brand-logo" style="color: #fff; margin-bottom: 1rem; display: inline-flex;">
+            <i class="fa-solid fa-vector-square" style="color: var(--secondary);"></i>
+            <span>Apex<span>Fence</span></span>
+          </a>
+          <p>Your trusted fencing partner for over 25 years. Delivering master post setting, premium materials, and prompt professional service across residential, agricultural, and commercial properties.</p>
+          <div class="footer-socials">
+            <a href="#" class="social-btn" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#" class="social-btn" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" class="social-btn" aria-label="Houzz"><i class="fa-brands fa-houzz"></i></a>
+            <a href="#" class="social-btn" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Quick Navigation</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="home-2.html">Home (Repair)</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="fence-styles.html">Fence Styles</a></li>
+            <li><a href="materials.html">Materials Catalog</a></li>
+            <li><a href="services.html">Installation & Repair</a></li>
+            <li><a href="pricing.html">Pricing & Estimates</a></li>
+            <li><a href="gallery.html">Gallery & Projects</a></li>
+            <li><a href="contact.html">Free Measurement Form</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Fence Styles</h4>
+          <ul class="footer-links">
+            <li><a href="fence-styles.html">Western Cedar Privacy</a></li>
+            <li><a href="fence-styles.html">Modern Horizontal Slats</a></li>
+            <li><a href="fence-styles.html">Powder Aluminum Estate</a></li>
+            <li><a href="fence-styles.html">Virgin Vinyl Privacy</a></li>
+            <li><a href="fence-styles.html">Black Chain Link</a></li>
+            <li><a href="services.html">Automated Security Gates</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Showroom & Service Area</h4>
+          <p><i class="fa-solid fa-map-pin" style="color: var(--secondary); margin-right: 0.5rem;"></i> 742 Timberline Blvd, Metro Area</p>
+          <p><i class="fa-solid fa-phone" style="color: var(--secondary); margin-right: 0.5rem;"></i> 24/7 Hotline: (800) 555-FENCE</p>
+          <p><i class="fa-solid fa-envelope" style="color: var(--secondary); margin-right: 0.5rem;"></i> estimates@apexfencesolutions.com</p>
+          <div style="margin-top: 1rem; padding: 0.75rem; background: rgba(255,255,255,0.05); border-radius: 8px;">
+            <small style="color: var(--secondary); font-weight: 700;">PROUD MEMBER OF:</small><br>
+            <span style="font-size: 0.8rem; color: #fff;">American Fence Association (AFA)</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>&copy; 2026 Apex Fence Solutions Inc. All rights reserved. Licensed Contractor #FC-892401.</div>
+        <div style="display: flex; gap: 1.2rem; flex-wrap: wrap;">
+          <a href="contact.html">Privacy Policy</a>
+          <a href="contact.html">Terms of Warranty</a>
+          <a href="contact.html">Sitemap</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    /* ===== HAMBURGER NAV ===== */
+    const menuToggle = document.getElementById('menuToggle');
+    const navMenu = document.getElementById('navMenu');
+
+    menuToggle.addEventListener('click', (e) => {
+      e.stopPropagation();
+      navMenu.classList.toggle('mobile-open');
+      const icon = menuToggle.querySelector('i');
+      if (navMenu.classList.contains('mobile-open')) {
+        icon.classList.remove('fa-bars');
+        icon.classList.add('fa-xmark');
+      } else {
+        icon.classList.remove('fa-xmark');
+        icon.classList.add('fa-bars');
+      }
+    });
+
+    document.querySelectorAll('.nav-link, .dropdown-item, .nav-drawer-actions .btn').forEach(link => {
+      link.addEventListener('click', () => {
+        navMenu.classList.remove('mobile-open');
+        const icon = menuToggle.querySelector('i');
+        if (icon) {
+          icon.classList.remove('fa-xmark');
+          icon.classList.add('fa-bars');
+        }
+      });
+    });
+
+    document.addEventListener('click', (e) => {
+      if (navMenu.classList.contains('mobile-open')) {
+        if (!navMenu.contains(e.target) && !menuToggle.contains(e.target)) {
+          navMenu.classList.remove('mobile-open');
+          const icon = menuToggle.querySelector('i');
+          if (icon) {
+            icon.classList.remove('fa-xmark');
+            icon.classList.add('fa-bars');
+          }
+        }
+      }
+    });
+
+    /* ===== THEME TOGGLE (DARK / LIGHT) ===== */
+    const themeToggle = document.getElementById('themeToggle');
+    const themeIcon = themeToggle.querySelector('i');
+    const body = document.body;
+
+    function applyTheme(theme) {
+      if (theme === 'dark') {
+        body.classList.add('dark-mode');
+        themeIcon.classList.remove('fa-moon');
+        themeIcon.classList.add('fa-sun');
+        themeToggle.setAttribute('title', 'Switch to Light Mode');
+      } else {
+        body.classList.remove('dark-mode');
+        themeIcon.classList.remove('fa-sun');
+        themeIcon.classList.add('fa-moon');
+        themeToggle.setAttribute('title', 'Switch to Dark Mode');
+      }
+    }
+
+    const savedTheme = localStorage.getItem('apex-theme');
+    if (savedTheme) {
+      applyTheme(savedTheme);
+    } else {
+      applyTheme('light');
+    }
+
+    themeToggle.addEventListener('click', () => {
+      const isDark = body.classList.contains('dark-mode');
+      const newTheme = isDark ? 'light' : 'dark';
+      applyTheme(newTheme);
+      localStorage.setItem('apex-theme', newTheme);
+    });
+
+    /* ===== RTL / LTR TOGGLE ===== */
+    const rtlToggle = document.getElementById('rtlToggle');
+    const htmlEl = document.documentElement;
+
+    function applyDir(dir) {
+      htmlEl.setAttribute('dir', dir);
+      if (dir === 'rtl') {
+        rtlToggle.classList.add('active');
+        rtlToggle.setAttribute('title', 'Switch to LTR');
+      } else {
+        rtlToggle.classList.remove('active');
+        rtlToggle.setAttribute('title', 'Switch to RTL');
+      }
+    }
+
+    const savedDir = localStorage.getItem('apex-dir');
+    if (savedDir) {
+      applyDir(savedDir);
+    }
+
+    rtlToggle.addEventListener('click', () => {
+      const currentDir = htmlEl.getAttribute('dir');
+      const newDir = currentDir === 'rtl' ? 'ltr' : 'rtl';
+      applyDir(newDir);
+      localStorage.setItem('apex-dir', newDir);
+    });
+  
+    </script>
+</body>
+</html>

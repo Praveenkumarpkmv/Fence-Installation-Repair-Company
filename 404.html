@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>404 — Page Not Found | Apex Fence Solutions</title>
+  <meta name="description" content="The page you're looking for doesn't exist. Return to Apex Fence Solutions homepage.">
+  <meta name="robots" content="noindex">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; font-size: 16px; }
+    body {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      color: #1b2024;
+      background-color: #ffffff;
+      line-height: 1.6;
+      overflow-x: hidden;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 1.5rem;
+    }
+
+    :root {
+      --primary: #1e3a29;
+      --primary-light: #2c543c;
+      --secondary: #c28848;
+      --secondary-hover: #a97338;
+      --text-primary: #1b2024;
+      --text-secondary: #4b5563;
+      --text-muted: #6b7280;
+      --border-color: #e2e8f0;
+      --surface-alt: #f8fafc;
+      --radius: 10px;
+      --shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.08), 0 8px 10px -6px rgba(0, 0, 0, 0.04);
+      --transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    /* ===== BUTTONS ===== */
+    .btn {
+      display: inline-flex; align-items: center; justify-content: center;
+      gap: 0.6rem; padding: 0.85rem 1.8rem; font-size: 0.95rem; font-weight: 600;
+      border-radius: var(--radius); border: 2px solid transparent; cursor: pointer;
+      transition: var(--transition); text-align: center; white-space: nowrap;
+    }
+    .btn-primary { background-color: var(--secondary); color: #fff; }
+    .btn-primary:hover {
+      background-color: var(--secondary-hover);
+      transform: translateY(-2px);
+      box-shadow: 0 10px 20px -5px rgba(194, 136, 72, 0.4);
+    }
+    .btn-dark { background-color: var(--primary); color: #fff; }
+    .btn-dark:hover { background-color: var(--primary-light); transform: translateY(-2px); }
+
+    /* ===== 404 WRAPPER ===== */
+    .error-wrapper {
+      width: 100%;
+      max-width: 720px;
+      text-align: center;
+      margin: 0 auto;
+      animation: fadeInUp 0.6s ease;
+    }
+
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    /* Logo */
+    .error-logo {
+      display: inline-flex; align-items: center; gap: 0.6rem;
+      font-size: 1.3rem; font-weight: 800; color: var(--primary);
+      margin-bottom: 2.5rem;
+      text-decoration: none;
+    }
+    .error-logo i { font-size: 1.6rem; color: var(--secondary); }
+    .error-logo span span { color: var(--secondary); }
+
+    /* Big 404 number */
+    .error-code {
+      font-size: clamp(6rem, 20vw, 11rem);
+      font-weight: 800;
+      line-height: 1;
+      letter-spacing: -0.04em;
+      background: linear-gradient(135deg, var(--secondary) 0%, var(--primary) 100%);
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      margin-bottom: 0.5rem;
+      position: relative;
+      display: inline-block;
+    }
+
+    /* Decorative fence icon behind number */
+    .error-code-wrap {
+      position: relative;
+      display: inline-block;
+    }
+    .error-icon-bg {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: clamp(8rem, 25vw, 14rem);
+      color: var(--secondary);
+      opacity: 0.06;
+      z-index: -1;
+      pointer-events: none;
+    }
+
+    .error-title {
+      font-size: clamp(1.5rem, 4vw, 2.2rem);
+      font-weight: 700;
+      color: var(--text-primary);
+      margin-bottom: 1rem;
+      line-height: 1.25;
+    }
+
+    .error-message {
+      font-size: clamp(0.95rem, 2vw, 1.1rem);
+      color: var(--text-secondary);
+      max-width: 520px;
+      margin: 0 auto 2.5rem;
+      line-height: 1.6;
+    }
+
+    /* Action buttons */
+    .error-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      justify-content: center;
+      margin-bottom: 3rem;
+    }
+
+    /* Quick links */
+    .quick-links-wrap {
+      padding-top: 2rem;
+      border-top: 1px solid var(--border-color);
+    }
+    .quick-links-label {
+      font-size: 0.78rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--text-muted);
+      margin-bottom: 1rem;
+    }
+    .quick-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.6rem;
+      justify-content: center;
+    }
+    .quick-link {
+      font-size: 0.85rem;
+      font-weight: 600;
+      color: var(--text-secondary);
+      padding: 0.45rem 1rem;
+      border-radius: 999px;
+      border: 1px solid var(--border-color);
+      background: var(--surface-alt);
+      transition: var(--transition);
+      text-decoration: none;
+    }
+    .quick-link:hover {
+      background: var(--secondary);
+      color: #fff;
+      border-color: var(--secondary);
+      transform: translateY(-2px);
+    }
+
+    /* Responsive */
+    @media (max-width: 600px) {
+      .error-actions { flex-direction: column; align-items: stretch; }
+      .error-actions .btn { width: 100%; }
+      .error-logo { font-size: 1.1rem; margin-bottom: 2rem; }
+      .error-logo i { font-size: 1.4rem; }
+    }
+
+    @media (max-width: 400px) {
+      .quick-link { font-size: 0.78rem; padding: 0.4rem 0.8rem; }
+      .error-message { margin-bottom: 2rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <main class="error-wrapper">
+    <!-- Small logo -->
+    <a href="index.html" class="error-logo">
+      <i class="fa-solid fa-vector-square"></i>
+      <span>Apex<span>Fence</span></span>
+    </a>
+
+    <!-- Big 404 with fence icon behind -->
+    <div class="error-code-wrap">
+      <i class="fa-solid fa-border-all error-icon-bg"></i>
+      <div class="error-code">404</div>
+    </div>
+
+    <h1 class="error-title">This Fence Line Doesn't Exist</h1>
+    <p class="error-message">
+      Looks like you wandered off the property. The page you're looking for may have been moved, removed, or never built in the first place.
+    </p>
+
+    <div class="error-actions">
+      <a href="index.html" class="btn btn-primary">
+        <i class="fa-solid fa-house"></i> Back to Home
+      </a>
+      <a href="contact.html#measurement" class="btn btn-dark">
+        <i class="fa-solid fa-ruler-combined"></i> Book Free Measurement
+      </a>
+    </div>
+
+    <!-- Quick links -->
+    <div class="quick-links-wrap">
+      <div class="quick-links-label">Or try one of these</div>
+      <div class="quick-links">
+        <a href="fence-styles.html" class="quick-link">Fence Styles</a>
+        <a href="materials.html" class="quick-link">Materials</a>
+        <a href="services.html" class="quick-link">Install & Repair</a>
+        <a href="gallery.html" class="quick-link">Gallery</a>
+        <a href="pricing.html" class="quick-link">Pricing</a>
+        <a href="contact.html" class="quick-link">Contact</a>
+      </div>
+    </div>
+  </main>
+
+</body>
+</html>

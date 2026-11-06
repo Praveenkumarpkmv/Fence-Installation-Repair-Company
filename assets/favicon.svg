@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <defs>
+    <linearGradient id="apexBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e3a29"/>
+      <stop offset="100%" stop-color="#0f1f16"/>
+    </linearGradient>
+    <linearGradient id="apexGold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#e0a458"/>
+      <stop offset="100%" stop-color="#c28848"/>
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="2" stdDeviation="1.5" flood-color="#000000" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <!-- Background rounded squircle -->
+  <rect width="64" height="64" rx="14" fill="url(#apexBg)"/>
+  <rect x="1" y="1" width="62" height="62" rx="13" fill="none" stroke="url(#apexGold)" stroke-width="1.5" stroke-opacity="0.35"/>
+  
+  <!-- Fence / Apex Motif -->
+  <g filter="url(#shadow)">
+    <!-- Center taller picket (Apex) -->
+    <path d="M32 11 L37 17 V50 H27 V17 Z" fill="url(#apexGold)"/>
+    <!-- Left picket -->
+    <path d="M20 18 L25 23 V50 H15 V23 Z" fill="url(#apexGold)" opacity="0.9"/>
+    <!-- Right picket -->
+    <path d="M44 18 L49 23 V50 H39 V23 Z" fill="url(#apexGold)" opacity="0.9"/>
+    <!-- Upper horizontal rail -->
+    <rect x="12" y="27" width="40" height="4.5" rx="1.5" fill="#ffffff" opacity="0.92"/>
+    <!-- Lower horizontal rail -->
+    <rect x="12" y="40" width="40" height="4.5" rx="1.5" fill="#ffffff" opacity="0.92"/>
+  </g>
+</svg>

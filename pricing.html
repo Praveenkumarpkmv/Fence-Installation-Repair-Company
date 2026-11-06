@@ -1,0 +1,1235 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pricing & Estimates | Apex Fence Solutions</title>
+  <meta name="description" content="Transparent fence pricing. Compare installation tiers, add-on costs, and financing options. Free on-site measurement and fixed-price quote.">
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="alternate icon" type="image/png" href="assets/favicon.png">
+  <link rel="apple-touch-icon" href="assets/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; font-size: 16px; }
+    body {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      color: var(--text-primary);
+      background-color: var(--body-bg);
+      line-height: 1.6;
+      overflow-x: hidden;
+      transition: background-color 0.35s ease, color 0.35s ease;
+    }
+    h1, h2, h3, h4 { font-weight: 700; line-height: 1.25; color: var(--text-primary); transition: color 0.35s ease; }
+    a { text-decoration: none; color: inherit; transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1); }
+    img { max-width: 100%; height: auto; display: block; }
+    .container { width: 100%; max-width: 1240px; margin: 0 auto; padding: 0 1.5rem; }
+
+    /* ===== THEME VARIABLES ===== */
+    :root {
+      --primary: #1e3a29;
+      --primary-dark: #122419;
+      --primary-light: #2c543c;
+      --secondary: #c28848;
+      --secondary-hover: #a97338;
+      --dark: #1b2024;
+      --gray-800: #2d3748;
+      --gray-600: #4b5563;
+      --gray-300: #cbd5e1;
+      --gray-100: #f1f5f9;
+      --light: #f8fafc;
+      --white: #ffffff;
+      --surface: #ffffff;
+      --surface-alt: #f8fafc;
+      --body-bg: #ffffff;
+      --text-primary: #1b2024;
+      --text-secondary: #4b5563;
+      --text-muted: #6b7280;
+      --border-color: #e2e8f0;
+      --card-bg: #ffffff;
+      --navbar-bg: #ffffff;
+      --footer-bg: #122419;
+      --hero-overlay: rgba(18, 36, 25, 0.92);
+      --shadow-color: rgba(0, 0, 0, 0.08);
+      --input-bg: #ffffff;
+      --input-border: #cbd5e1;
+      --radius: 10px;
+      --shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.08), 0 8px 10px -6px rgba(0, 0, 0, 0.04);
+      --transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+      --nav-active-bg: rgba(194, 136, 72, 0.12);
+      --nav-active-color: #a97338;
+      --nav-hover-bg: rgba(0, 0, 0, 0.04);
+      --dropdown-bg: #f8fafc;
+      --dropdown-border: #e2e8f0;
+      --dropdown-text: #1e293b;
+      --dropdown-hover-bg: #eef2f6;
+      --dropdown-active-bg: #c28848;
+      --dropdown-active-color: #ffffff;
+    }
+
+    /* ===== DARK MODE ===== */
+    body.dark-mode {
+      background-color: var(--body-bg);
+      color: var(--text-primary);
+      --primary: #c28848;
+      --primary-dark: #0a0f0c;
+      --primary-light: #a97338;
+      --secondary: #e0a458;
+      --secondary-hover: #c28848;
+      --dark: #f1f5f9;
+      --gray-800: #e2e8f0;
+      --gray-600: #a0aec0;
+      --gray-300: #3a4a5a;
+      --gray-100: #1e2a35;
+      --light: #141c24;
+      --white: #0f161d;
+      --surface: #141c24;
+      --surface-alt: #0f161d;
+      --body-bg: #0a0f0c;
+      --text-primary: #f1f5f9;
+      --text-secondary: #a0aec0;
+      --text-muted: #718096;
+      --border-color: #2d3a47;
+      --card-bg: #141c24;
+      --navbar-bg: #0f161d;
+      --footer-bg: #050907;
+      --hero-overlay: rgba(5, 9, 7, 0.92);
+      --shadow-color: rgba(0, 0, 0, 0.4);
+      --input-bg: #1a2530;
+      --input-border: #2d3a47;
+      --shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.5), 0 8px 10px -6px rgba(0, 0, 0, 0.3);
+      --nav-active-bg: rgba(224, 164, 88, 0.18);
+      --nav-active-color: #e0a458;
+      --nav-hover-bg: rgba(255, 255, 255, 0.05);
+      --dropdown-bg: #020617;
+      --dropdown-border: #1e293b;
+      --dropdown-text: #f1f5f9;
+      --dropdown-hover-bg: #0f172a;
+      --dropdown-active-bg: #c28848;
+      --dropdown-active-color: #ffffff;
+    }
+
+    body.dark-mode h1,
+    body.dark-mode h2,
+    body.dark-mode h3,
+    body.dark-mode h4 { color: var(--text-primary); }
+
+    body.dark-mode .page-hero h1,
+    body.dark-mode .site-footer h4,
+    body.dark-mode .site-footer p,
+    body.dark-mode .site-footer a { color: #f1f5f9; }
+
+    /* ===== RTL SUPPORT ===== */
+    [dir="rtl"] .nav-links { direction: rtl; }
+    [dir="rtl"] .footer-col h4::after { left: auto; right: 0; }
+    [dir="rtl"] .footer-links a:hover { padding-left: 0; padding-right: 4px; }
+    [dir="rtl"] .nav-cta { flex-direction: row-reverse; }
+    [dir="rtl"] .btn i { transform: scaleX(-1); }
+    [dir="rtl"] .page-hero { text-align: center; }
+    [dir="rtl"] .pricing-card,
+    [dir="rtl"] .addon-card,
+    [dir="rtl"] .faq-item,
+    [dir="rtl"] .financing-card { text-align: right; }
+    [dir="rtl"] .dropdown-menu { left: auto; right: 0; }
+    [dir="rtl"] .dropdown-item small { text-align: right; }
+    [dir="rtl"] .pricing-features li { flex-direction: row-reverse; }
+    [dir="rtl"] .faq-question { flex-direction: row-reverse; }
+    [dir="rtl"] .faq-question i { margin-left: 0; margin-right: auto; }
+    [dir="rtl"] .price-row { flex-direction: row-reverse; }
+    [dir="rtl"] .addon-price { text-align: left; }
+
+    /* ===== THEME & RTL BUTTONS ===== */
+    .theme-controls { display: flex; align-items: center; gap: 0.4rem; }
+    .icon-btn {
+      width: 38px; height: 38px; border-radius: 50%;
+      border: 1px solid var(--border-color);
+      background: var(--surface);
+      color: var(--text-primary);
+      display: flex; align-items: center; justify-content: center;
+      cursor: pointer; font-size: 0.95rem;
+      transition: var(--transition);
+      flex-shrink: 0;
+    }
+    .icon-btn:hover {
+      background: var(--secondary);
+      color: #fff;
+      border-color: var(--secondary);
+      transform: translateY(-2px);
+    }
+    .icon-btn.active { background: var(--secondary); color: #fff; border-color: var(--secondary); }
+
+    /* ===== BUTTONS ===== */
+    .btn {
+      display: inline-flex; align-items: center; justify-content: center;
+      gap: 0.6rem; padding: 0.85rem 1.8rem; font-size: 0.95rem; font-weight: 600;
+      border-radius: var(--radius); border: 2px solid transparent; cursor: pointer;
+      transition: var(--transition); text-align: center; white-space: nowrap;
+    }
+    .btn-primary { background-color: var(--secondary); color: #fff; }
+    .btn-primary:hover { background-color: var(--secondary-hover); transform: translateY(-2px); box-shadow: 0 10px 20px -5px rgba(194, 136, 72, 0.4); }
+    .btn-outline { background-color: transparent; border-color: #fff; color: #fff; }
+    .btn-outline:hover { background-color: #fff; color: var(--primary); }
+    .btn-dark { background-color: var(--primary); color: #fff; }
+    .btn-dark:hover { background-color: var(--primary-light); transform: translateY(-2px); }
+    body.dark-mode .btn-dark { background-color: var(--secondary); color: #0a0f0c; }
+    body.dark-mode .btn-dark:hover { background-color: var(--secondary-hover); }
+
+    .badge {
+      display: inline-block; padding: 0.35rem 0.9rem; font-size: 0.78rem; font-weight: 700;
+      text-transform: uppercase; letter-spacing: 0.08em; border-radius: 999px;
+      background-color: rgba(194, 136, 72, 0.15); color: var(--secondary); margin-bottom: 0.8rem;
+    }
+    .section-title-wrap { text-align: center; max-width: 720px; margin: 0 auto 3.5rem; }
+    .section-title-wrap h2 { font-size: 2.3rem; margin-bottom: 0.8rem; }
+    .section-title-wrap p { color: var(--text-secondary); font-size: 1.05rem; }
+
+    /* NAVBAR */
+    .navbar {
+      position: sticky; top: 0; z-index: 1000; background-color: var(--navbar-bg);
+      box-shadow: 0 4px 20px rgba(0,0,0,0.06); transition: var(--transition);
+      border-bottom: 1px solid var(--border-color);
+    }
+    .nav-container { display: flex; align-items: center; justify-content: space-between; height: 82px; gap: 0.5rem; }
+    .brand-logo { display: flex; align-items: center; gap: 0.75rem; font-size: 1.45rem; font-weight: 800; color: var(--primary); flex-shrink: 0; }
+    .brand-logo i { font-size: 1.8rem; color: var(--secondary); }
+    .brand-logo span span { color: var(--secondary); }
+    body.dark-mode .brand-logo { color: var(--secondary); }
+
+    /* ===== NAVBAR ACTIONS & NAVIGATION (DESKTOP DEFAULT) ===== */
+    .menu-toggle {
+      display: none;
+      align-items: center;
+      justify-content: center;
+      width: 44px;
+      height: 44px;
+      border-radius: var(--radius);
+      border: 1px solid var(--border-color);
+      background: var(--surface);
+      color: var(--text-primary);
+      font-size: 1.35rem;
+      cursor: pointer;
+      transition: var(--transition);
+    }
+    .menu-toggle:hover {
+      background: var(--secondary);
+      color: #fff;
+      border-color: var(--secondary);
+    }
+    body.dark-mode .menu-toggle {
+      color: var(--text-primary);
+    }
+
+    /* DESKTOP NAV WRAPPER (TOPICS VISIBLE HORIZONTALLY) */
+    .nav-menu-wrapper {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      flex: 1;
+      gap: 1.25rem;
+      background: transparent;
+      box-shadow: none;
+      border: none;
+      padding: 0;
+      position: static;
+      width: auto;
+      max-width: none;
+      max-height: none;
+      overflow: visible;
+      z-index: 1001;
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      list-style: none;
+      gap: 0.35rem;
+      margin: 0;
+      padding: 0;
+      flex-direction: row;
+      width: auto;
+    }
+    .nav-item { position: relative; width: auto; }
+    .nav-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.35rem;
+      padding: 0.5rem 0.7rem;
+      font-size: 0.92rem;
+      font-weight: 600;
+      color: var(--text-primary);
+      border-radius: 8px;
+      transition: var(--transition);
+      text-decoration: none;
+      white-space: nowrap;
+    }
+    .nav-link:hover {
+      color: var(--secondary);
+      background-color: var(--nav-hover-bg);
+    }
+    .nav-link.active {
+      color: var(--nav-active-color);
+      background-color: var(--nav-active-bg);
+      font-weight: 700;
+    }
+
+    /* DROPDOWN (DESKTOP HOVER) */
+    .dropdown { position: relative; }
+    .dropdown-toggle { cursor: pointer; }
+    .dropdown-toggle i { font-size: 0.75rem; transition: transform 0.2s ease; }
+    .dropdown:hover .dropdown-toggle i { transform: rotate(180deg); }
+    .dropdown-menu {
+      position: absolute;
+      top: calc(100% + 6px);
+      left: 0;
+      width: 180px;
+      background: var(--dropdown-bg);
+      border-radius: 12px;
+      box-shadow: 0 15px 35px rgba(0, 0, 0, 0.18);
+      border: 1px solid var(--dropdown-border);
+      padding: 0.4rem;
+      opacity: 0;
+      visibility: hidden;
+      transform: translateY(8px);
+      transition: all 0.22s cubic-bezier(0.16, 1, 0.3, 1);
+      z-index: 1002;
+      display: flex;
+      flex-direction: column;
+      gap: 0.25rem;
+    }
+    [dir="rtl"] .dropdown-menu { left: auto; right: 0; }
+    .dropdown:hover .dropdown-menu {
+      opacity: 1;
+      visibility: visible;
+      transform: translateY(0);
+      pointer-events: auto;
+    }
+    .dropdown-item {
+      display: block;
+      padding: 0.6rem 0.85rem;
+      font-size: 0.9rem;
+      font-weight: 600;
+      color: var(--dropdown-text);
+      text-decoration: none;
+      border-radius: 6px;
+      transition: background 0.2s ease, color 0.2s ease;
+      cursor: pointer;
+    }
+    .dropdown-item:hover {
+      background-color: var(--dropdown-hover-bg);
+      color: var(--secondary);
+    }
+    .dropdown-item.active {
+      background-color: var(--dropdown-active-bg);
+      color: var(--dropdown-active-color);
+      font-weight: 700;
+    }
+
+    /* DESKTOP ACTIONS: CTA BUTTON + THEME/RTL */
+    .nav-drawer-actions {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      border: none;
+      padding: 0;
+      margin: 0;
+      width: auto;
+    }
+    .nav-drawer-cta {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.5rem;
+      padding: 0.6rem 1.25rem;
+      font-size: 0.88rem;
+      white-space: nowrap;
+      width: auto;
+    }
+    .theme-controls {
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+      width: auto;
+    }
+    .theme-controls .icon-btn {
+      width: 38px;
+      height: 38px;
+      font-size: 0.95rem;
+    }
+
+    /* RESPONSIVE NAVBAR: IPAD (PRO 13 VERTICAL/HORIZONTAL) & MOBILE (<= 1380px) */
+    @media (max-width: 1380px) {
+      .menu-toggle {
+        display: flex;
+      }
+      .nav-menu-wrapper {
+        display: none;
+        position: fixed;
+        top: 86px;
+        right: 2rem;
+        width: 340px;
+        max-width: calc(100vw - 2rem);
+        background: var(--navbar-bg);
+        flex-direction: column;
+        padding: 1.5rem;
+        border-radius: 16px;
+        box-shadow: 0 20px 45px rgba(0, 0, 0, 0.25);
+        border: 1px solid var(--border-color);
+        max-height: calc(100vh - 105px);
+        overflow-y: auto;
+        gap: 0.75rem;
+        z-index: 1001;
+      }
+      [dir="rtl"] .nav-menu-wrapper {
+        right: auto;
+        left: 2rem;
+      }
+      .nav-menu-wrapper.mobile-open {
+        display: flex !important;
+        animation: menuSlideDown 0.22s cubic-bezier(0.16, 1, 0.3, 1);
+      }
+      @keyframes menuSlideDown {
+        from { opacity: 0; transform: translateY(-8px); }
+        to { opacity: 1; transform: translateY(0); }
+      }
+      .nav-links {
+        flex-direction: column;
+        width: 100%;
+        gap: 0.25rem;
+        align-items: stretch;
+      }
+      .nav-item {
+        width: 100%;
+      }
+      .nav-link {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        padding: 0.75rem 0.85rem;
+        font-size: 1rem;
+      }
+      .nav-link.active {
+        border-left: 3px solid var(--secondary);
+        padding-left: 1rem;
+      }
+      [dir="rtl"] .nav-link.active {
+        border-left: none;
+        border-right: 3px solid var(--secondary);
+        padding-left: 0.85rem;
+        padding-right: 1rem;
+      }
+      .dropdown-menu {
+        position: static;
+        opacity: 1;
+        visibility: visible;
+        transform: none;
+        box-shadow: none;
+        border: 1px solid var(--dropdown-border);
+        margin: 0.4rem 0 0.6rem;
+        width: 100%;
+        border-radius: 12px;
+      }
+      .dropdown-item {
+        padding: 0.75rem 1rem;
+        font-size: 0.95rem;
+      }
+      .dropdown-item:not(:last-child) {
+        border-bottom: 1px solid var(--dropdown-border);
+      }
+      .dropdown-item.active {
+        border-left: 3px solid var(--secondary);
+        padding-left: 1.15rem;
+      }
+      [dir="rtl"] .dropdown-item.active {
+        border-left: none;
+        border-right: 3px solid var(--secondary);
+        padding-left: 1rem;
+        padding-right: 1.15rem;
+      }
+      .nav-drawer-actions {
+        display: flex;
+        flex-direction: column;
+        gap: 0.85rem;
+        width: 100%;
+        padding-top: 1rem;
+        border-top: 1px solid var(--border-color);
+        margin-top: 0.5rem;
+      }
+      .nav-drawer-cta {
+        width: 100%;
+        justify-content: center;
+        padding: 0.85rem 1.5rem;
+        font-size: 0.95rem;
+      }
+      .theme-controls {
+        display: flex;
+        justify-content: center;
+        gap: 0.85rem;
+        width: 100%;
+      }
+      .theme-controls .icon-btn {
+        width: 42px;
+        height: 42px;
+        font-size: 1rem;
+      }
+    }
+
+    /* FULL WIDTH DRAWER ON PHONES (<= 820px) */
+    @media (max-width: 820px) {
+      .nav-menu-wrapper {
+        top: 82px;
+        left: 0;
+        right: 0;
+        width: 100%;
+        max-width: 100%;
+        border-radius: 0 0 16px 16px;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        border-bottom: 2px solid var(--secondary);
+        padding: 1.5rem 1.5rem 2rem;
+      }
+      [dir="rtl"] .nav-menu-wrapper {
+        left: 0;
+        right: 0;
+      }
+    }
+
+    /* PAGE HERO */
+    .page-hero {
+      position: relative; background-size: cover; background-position: center;
+      color: #fff; padding: 5.5rem 0 5rem; min-height: 420px; display: flex; align-items: center; justify-content: center;
+      text-align: center;
+      background: linear-gradient(rgba(18, 36, 25, 0.88), rgba(18, 36, 25, 0.88)),
+                  url('assets/p1.jpeg') center/cover no-repeat;
+    }
+    body.dark-mode .page-hero {
+      background: linear-gradient(rgba(5, 9, 7, 0.92), rgba(5, 9, 7, 0.92)),
+                  url('assets/p1.jpeg') center/cover no-repeat;
+    }
+    [dir="rtl"] .page-hero {
+      text-align: center;
+      background: linear-gradient(rgba(18, 36, 25, 0.88), rgba(18, 36, 25, 0.88)),
+                  url('assets/p1.jpeg') center/cover no-repeat;
+    }
+    .page-hero-content { max-width: 820px; margin: 0 auto; text-align: center; z-index: 2; }
+    .page-hero h1 { font-size: 3rem; color: #fff; margin-bottom: 1rem; line-height: 1.15; }
+    .page-hero h1 span { color: var(--secondary); }
+    .page-hero p { font-size: 1.1rem; color: rgba(255,255,255,0.9); margin-bottom: 0; max-width: 680px; margin-left: auto; margin-right: auto; }
+
+    section { padding: 5rem 0; }
+
+    /* SECTION 2: PRICING TIERS */
+    .pricing-bg { background: var(--body-bg); }
+    .pricing-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem; align-items: stretch; }
+    .pricing-card {
+      background: var(--card-bg); border: 1px solid var(--border-color); border-radius: 16px;
+      padding: 2.5rem 2rem; box-shadow: var(--shadow); display: flex; flex-direction: column;
+      position: relative; transition: var(--transition);
+    }
+    .pricing-card:hover { transform: translateY(-6px); box-shadow: 0 20px 40px rgba(0,0,0,0.12); }
+    .pricing-card.featured { border: 2px solid var(--secondary); transform: scale(1.04); box-shadow: 0 20px 40px rgba(194, 136, 72, 0.15); }
+    .pricing-card.featured:hover { transform: scale(1.04) translateY(-6px); }
+    .pricing-card.featured .popular-tag {
+      position: absolute; top: -14px; left: 50%; transform: translateX(-50%);
+      background: var(--secondary); color: #fff; font-size: 0.72rem; font-weight: 700;
+      text-transform: uppercase; letter-spacing: 0.06em; padding: 0.35rem 1.2rem; border-radius: 999px;
+      white-space: nowrap;
+    }
+    [dir="rtl"] .pricing-card.featured .popular-tag { left: 50%; transform: translateX(-50%); }
+    .pricing-card h3 {
+      font-size: 1.35rem;
+      line-height: 1.25;
+      margin-bottom: 0.5rem;
+      min-height: 3.4rem;
+      display: flex;
+      align-items: center;
+    }
+    .pricing-card .subtitle {
+      color: var(--text-secondary);
+      font-size: 0.88rem;
+      line-height: 1.5;
+      margin-bottom: 1.5rem;
+      min-height: 2.7rem;
+    }
+    .pricing-rate {
+      display: flex;
+      align-items: baseline;
+      gap: 0.35rem;
+      flex-wrap: wrap;
+      min-height: 4.2rem;
+      margin-bottom: 1.8rem;
+      padding-bottom: 1.5rem;
+      border-bottom: 1px solid var(--border-color);
+    }
+    .pricing-rate .amount {
+      font-size: 2.25rem;
+      font-weight: 800;
+      color: var(--secondary);
+      line-height: 1;
+      white-space: nowrap;
+    }
+    .pricing-rate .unit {
+      color: var(--text-secondary);
+      font-size: 0.88rem;
+      white-space: nowrap;
+    }
+    .pricing-features { list-style: none; margin-bottom: 2rem; flex-grow: 1; }
+    .pricing-card .btn { margin-top: auto; }
+    .pricing-features li { margin-bottom: 0.8rem; font-size: 0.9rem; color: var(--text-primary); display: flex; align-items: flex-start; gap: 0.6rem; }
+    .pricing-features i { color: var(--secondary); font-size: 0.95rem; margin-top: 0.2rem; flex-shrink: 0; }
+
+    /* SECTION 3: ADD-ON PRICING TABLE */
+    .addons-bg { background: var(--surface-alt); }
+    .addons-table-wrap { background: var(--card-bg); border-radius: 16px; box-shadow: var(--shadow); border: 1px solid var(--border-color); overflow: hidden; }
+    .addons-table { width: 100%; border-collapse: collapse; }
+    .addons-table thead th {
+      background: var(--primary-dark); color: #fff; font-size: 0.82rem; font-weight: 700;
+      text-transform: uppercase; letter-spacing: 0.05em; padding: 1rem 1.2rem; text-align: left;
+    }
+    body.dark-mode .addons-table thead th { background: #050907; }
+    [dir="rtl"] .addons-table thead th { text-align: right; }
+    .addons-table tbody td { padding: 1rem 1.2rem; font-size: 0.9rem; color: var(--text-primary); border-bottom: 1px solid var(--border-color); }
+    .addons-table tbody tr:last-child td { border-bottom: none; }
+    .addons-table tbody tr:hover { background: var(--surface-alt); }
+    .addons-table .col-service { font-weight: 700; }
+    .addons-table .col-price { font-weight: 700; color: var(--secondary); white-space: nowrap; }
+
+    /* SECTION 4: FINANCING OPTIONS */
+    .financing-bg { background: var(--body-bg); }
+    .financing-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem; }
+    .financing-card {
+      background: var(--card-bg); border-radius: 14px; padding: 2.2rem 1.8rem;
+      box-shadow: var(--shadow); border: 1px solid var(--border-color);
+      transition: var(--transition); border-top: 4px solid var(--secondary);
+    }
+    .financing-card:hover { transform: translateY(-5px); box-shadow: 0 20px 35px rgba(0,0,0,0.1); }
+    .financing-icon {
+      width: 60px; height: 60px; border-radius: 14px; background: rgba(194, 136, 72, 0.12);
+      color: var(--secondary); display: flex; align-items: center; justify-content: center;
+      font-size: 1.6rem; margin-bottom: 1.3rem;
+    }
+    .financing-card h3 { font-size: 1.2rem; margin-bottom: 0.6rem; }
+    .financing-card .apr { font-size: 1.8rem; font-weight: 800; color: var(--secondary); margin-bottom: 0.5rem; }
+    .financing-card p { color: var(--text-secondary); font-size: 0.88rem; margin-bottom: 1.2rem; }
+    .financing-meta { font-size: 0.8rem; color: var(--text-secondary); padding-top: 1rem; border-top: 1px solid var(--border-color); }
+
+    /* SECTION 5: FAQ */
+    .faq-bg { background: var(--surface-alt); }
+    .faq-list { max-width: 860px; margin: 0 auto; display: flex; flex-direction: column; gap: 1rem; }
+    .faq-item {
+      background: var(--card-bg); border-radius: 12px; border: 1px solid var(--border-color);
+      overflow: hidden; transition: var(--transition);
+    }
+    .faq-item:hover,
+    .faq-item.open { border-color: var(--secondary); box-shadow: 0 4px 18px rgba(0, 0, 0, 0.05); }
+    .faq-question {
+      padding: 1.25rem 1.6rem; font-size: 1rem; font-weight: 700; color: var(--text-primary);
+      display: flex; align-items: center; justify-content: space-between; gap: 1rem;
+      cursor: pointer; user-select: none;
+    }
+    .faq-question i { color: var(--secondary); transition: transform 0.3s ease; flex-shrink: 0; font-size: 0.95rem; }
+    .faq-item.open .faq-question i { transform: rotate(180deg); }
+    .faq-answer {
+      max-height: 0; overflow: hidden; transition: max-height 0.35s ease, padding 0.35s ease;
+      padding: 0 1.6rem;
+    }
+    .faq-item.open .faq-answer { max-height: 350px; padding-bottom: 1.4rem; }
+    .faq-answer p { color: var(--text-secondary); font-size: 0.92rem; line-height: 1.65; margin: 0; }
+
+    /* SECTION 6: CTA */
+    .cta-bg { background: var(--primary-dark); color: #fff; }
+    body.dark-mode .cta-bg { background: #0a0f0c; }
+    .cta-inner { text-align: center; max-width: 760px; margin: 0 auto; }
+    .cta-inner h2 { color: #fff; font-size: 2.3rem; margin-bottom: 1rem; }
+    .cta-inner p { color: rgba(255,255,255,0.8); font-size: 1.05rem; margin-bottom: 2rem; }
+    .cta-actions { display: flex; flex-wrap: wrap; gap: 1rem; justify-content: center; }
+    .cta-features { display: flex; flex-wrap: wrap; gap: 1.5rem; justify-content: center; margin-top: 2.5rem; }
+    .cta-feature { display: flex; align-items: center; gap: 0.5rem; color: rgba(255,255,255,0.85); font-size: 0.88rem; }
+    .cta-feature i { color: var(--secondary); }
+
+    /* FOOTER */
+    .site-footer { background-color: var(--footer-bg); color: rgba(255,255,255,0.75); padding: 4rem 0 2rem; border-top: 1px solid rgba(255,255,255,0.06); }
+    .footer-grid { display: grid; grid-template-columns: 1.5fr 1fr 1fr 1.2fr; gap: 2.5rem; margin-bottom: 3rem; }
+    .footer-col h4 { color: #fff; font-size: 1.15rem; margin-bottom: 1.3rem; position: relative; }
+    .footer-col h4::after { content: ''; position: absolute; left: 0; bottom: -0.4rem; width: 32px; height: 2px; background: var(--secondary); }
+    .footer-col p { font-size: 0.9rem; line-height: 1.6; margin-bottom: 1rem; }
+    .footer-links { list-style: none; }
+    .footer-links li { margin-bottom: 0.7rem; }
+    .footer-links a { font-size: 0.9rem; transition: var(--transition); }
+    .footer-links a:hover { color: var(--secondary); padding-left: 4px; }
+    .footer-socials { display: flex; gap: 0.75rem; margin-top: 1.2rem; }
+    .social-btn { width: 38px; height: 38px; border-radius: 50%; background: rgba(255,255,255,0.08); display: flex; align-items: center; justify-content: center; color: #fff; transition: var(--transition); }
+    .social-btn:hover { background: var(--secondary); color: #fff; transform: translateY(-2px); }
+    .footer-bottom { padding-top: 2rem; border-top: 1px solid rgba(255,255,255,0.08); display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 1rem; font-size: 0.85rem; }
+
+    /* RESPONSIVE */
+    @media (max-width: 1100px) {
+      .pricing-grid { grid-template-columns: repeat(3, 1fr); gap: 1.2rem; }
+      .pricing-card { padding: 2rem 1.25rem; }
+      .pricing-card h3 { font-size: 1.22rem; min-height: 3.2rem; }
+      .pricing-rate .amount { font-size: 2rem; }
+      .financing-grid { grid-template-columns: repeat(2, 1fr); }
+      .footer-grid { grid-template-columns: repeat(2, 1fr); }
+    }
+
+    @media (max-width: 900px) {
+      .pricing-grid { grid-template-columns: 1fr; max-width: 480px; margin: 0 auto; gap: 2rem; }
+      .pricing-card h3 { min-height: auto; }
+      .pricing-card .subtitle { min-height: auto; }
+      .pricing-rate { min-height: auto; }
+      .pricing-card.featured { transform: scale(1); }
+      .pricing-card.featured:hover { transform: translateY(-6px); }
+      .pricing-card.featured .popular-tag { top: -14px; }
+    }
+            @media (max-width: 820px) {
+      .page-hero { min-height: 360px; padding: 3.5rem 0; }
+      .page-hero h1 { font-size: 2.2rem; }
+      .financing-grid { grid-template-columns: 1fr; }
+      .addons-table-wrap { overflow-x: auto; }
+      .addons-table { min-width: 560px; }
+      .footer-grid { grid-template-columns: 1fr; }
+      .section-title-wrap h2 { font-size: 1.9rem; }
+      .cta-inner h2 { font-size: 1.9rem; }
+    }
+
+    @media (max-width: 600px) {
+      .nav-container { height: 72px; }
+      .nav-menu-wrapper { top: 72px; max-height: calc(100vh - 72px); }
+      .page-hero h1 { font-size: 1.8rem; }
+      .section-title-wrap h2 { font-size: 1.6rem; }
+      .brand-logo { font-size: 1.1rem; gap: 0.4rem; }
+      .brand-logo i { font-size: 1.3rem; }
+    }
+    @media (max-width: 480px) {
+      .page-hero h1 { font-size: 1.6rem; }
+      .section-title-wrap h2 { font-size: 1.45rem; }
+      .section-title-wrap p { font-size: 0.92rem; }
+      .container { padding: 0 1rem; }
+      .cta-actions .btn { width: 100%; }
+      .cta-features { flex-direction: column; align-items: center; gap: 0.8rem; }
+      .pricing-card { padding: 2rem 1.4rem; }
+      .pricing-rate .amount { font-size: 2.2rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAVIGATION (same as index) -->
+  <header class="navbar">
+    <div class="container nav-container">
+      <a href="index.html" class="brand-logo">
+        <i class="fa-solid fa-vector-square"></i>
+        <span>Apex<span>Fence</span></span>
+      </a>
+
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle Navigation Menu">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+
+      <!-- Navigation Menu Drawer (slides down when hamburger is clicked) -->
+      <div class="nav-menu-wrapper" id="navMenu">
+        <ul class="nav-links" id="navLinks">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="index.html">
+            Home <i class="fa-solid fa-chevron-down"></i>
+          </a>
+          <div class="dropdown-menu">
+            <a href="index.html" class="dropdown-item">Home 1</a>
+            <a href="home-2.html" class="dropdown-item">Home 2</a>
+          </div>
+        </li>
+        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="fence-styles.html">Fence Styles</a></li>
+        <li class="nav-item"><a class="nav-link" href="materials.html">Materials</a></li>
+        <li class="nav-item"><a class="nav-link" href="services.html">Install & Repair</a></li>
+        <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+        <li class="nav-item"><a class="nav-link active" href="pricing.html">Pricing</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+      </ul>
+
+        <div class="nav-drawer-actions">
+          <a href="contact.html#measurement" class="btn btn-primary nav-drawer-cta">
+            <i class="fa-solid fa-ruler-combined"></i> <span>Free Measurement</span>
+          </a>
+          <div class="theme-controls">
+            <button class="icon-btn" id="rtlToggle" title="Toggle RTL/LTR" aria-label="Toggle text direction">
+              <i class="fa-solid fa-right-left"></i>
+            </button>
+            <button class="icon-btn" id="themeToggle" title="Toggle Dark/Light Mode" aria-label="Toggle dark mode">
+              <i class="fa-solid fa-moon"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- 1. PAGE HERO -->
+  <section class="page-hero">
+    <div class="container">
+      <div class="page-hero-content">
+        <div class="badge"><i class="fa-solid fa-tag"></i> Pricing & Estimates</div>
+        <h1>Transparent Pricing. <span>No Surprises.</span></h1>
+        <p>Every quote is itemized and fixed-price. No hidden disposal fees, no surprise material surcharges, no vague "starting at" numbers — just honest pricing from a crew that's been doing this for 25 years.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 2. PRICING TIERS -->
+  <section id="pricing-tiers" class="pricing-bg">
+    <div class="container">
+      <div class="section-title-wrap">
+        <div class="badge">Installation Tiers</div>
+        <h2>Choose Your Fence Tier</h2>
+        <p>All prices include labor, post-hole digging, concrete footings, and standard hardware. Final price confirmed during on-site measure.</p>
+      </div>
+
+      <div class="pricing-grid">
+        <div class="pricing-card">
+          <h3>Essential Security</h3>
+          <p class="subtitle">Best for budget-friendly boundary definition & pet containment.</p>
+          <div class="pricing-rate">
+            <span class="amount">$18 – $24</span>
+            <span class="unit">/ linear foot</span>
+          </div>
+          <ul class="pricing-features">
+            <li><i class="fa-solid fa-check"></i> Galvanized or black vinyl chain link</li>
+            <li><i class="fa-solid fa-check"></i> Heavy-duty 2" corner posts</li>
+            <li><i class="fa-solid fa-check"></i> Full concrete foundation pour</li>
+            <li><i class="fa-solid fa-check"></i> 1 standard 4ft walk gate included</li>
+            <li><i class="fa-solid fa-check"></i> 10-year craftsmanship warranty</li>
+          </ul>
+          <a href="contact.html#measurement" class="btn btn-dark" style="width: 100%;">Select Tier</a>
+        </div>
+
+        <div class="pricing-card featured">
+          <div class="popular-tag">Most Homeowners Pick</div>
+          <h3>Classic Cedar Privacy</h3>
+          <p class="subtitle">Unmatched warmth, sound dampening, and 100% privacy.</p>
+          <div class="pricing-rate">
+            <span class="amount">$34 – $48</span>
+            <span class="unit">/ linear foot</span>
+          </div>
+          <ul class="pricing-features">
+            <li><i class="fa-solid fa-check"></i> Premium #1 Western Red Cedar boards</li>
+            <li><i class="fa-solid fa-check"></i> 4x4 or 5x5 pressure-treated posts</li>
+            <li><i class="fa-solid fa-check"></i> Hot-dipped galvanized rust-proof ring nails</li>
+            <li><i class="fa-solid fa-check"></i> Steel anti-sag gate bracing kit</li>
+            <li><i class="fa-solid fa-check"></i> 15-year craftsmanship warranty</li>
+            <li><i class="fa-solid fa-check"></i> Free post-staining consultation</li>
+          </ul>
+          <a href="contact.html#measurement" class="btn btn-primary" style="width: 100%;">Select Tier</a>
+        </div>
+
+        <div class="pricing-card">
+          <h3>Elite Maintenance-Free</h3>
+          <p class="subtitle">Zero painting, zero rot, pool code compliant, forever durable.</p>
+          <div class="pricing-rate">
+            <span class="amount">$45 – $65</span>
+            <span class="unit">/ linear foot</span>
+          </div>
+          <ul class="pricing-features">
+            <li><i class="fa-solid fa-check"></i> Virgin Vinyl or Architectural Aluminum</li>
+            <li><i class="fa-solid fa-check"></i> High-wind rated internal aluminum I-beam</li>
+            <li><i class="fa-solid fa-check"></i> Self-closing magnetic pool gate latches</li>
+            <li><i class="fa-solid fa-check"></i> Lifetime manufacturer color warranty</li>
+            <li><i class="fa-solid fa-check"></i> Priority installation scheduling</li>
+          </ul>
+          <a href="contact.html#measurement" class="btn btn-dark" style="width: 100%;">Select Tier</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3. ADD-ON PRICING -->
+  <section id="addon-pricing" class="addons-bg">
+    <div class="container">
+      <div class="section-title-wrap">
+        <div class="badge">Add-On Services</div>
+        <h2>Optional Add-Ons & Upgrades</h2>
+        <p>Every add-on is priced separately and shown upfront in your quote — no surprises on the final invoice.</p>
+      </div>
+
+      <div class="addons-table-wrap">
+        <table class="addons-table">
+          <thead>
+            <tr>
+              <th>Service</th>
+              <th>Description</th>
+              <th>Price</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="col-service">Staining & Sealing</td>
+              <td>Pressure-wash, UV-resistant stain, sealant application</td>
+              <td class="col-price">From $3 / linear ft</td>
+            </tr>
+            <tr>
+              <td class="col-service">Old Fence Removal</td>
+              <td>Tear-down and haul-away of old wood, chain link, concrete</td>
+              <td class="col-price">From $2 / linear ft</td>
+            </tr>
+            <tr>
+              <td class="col-service">Tree & Root Clearing</td>
+              <td>Root, shrub, and small tree removal along fence line</td>
+              <td class="col-price">From $150 / stump</td>
+            </tr>
+            <tr>
+              <td class="col-service">Property Line Survey</td>
+              <td>Licensed surveyor verifies exact property boundaries</td>
+              <td class="col-price">From $350 / survey</td>
+            </tr>
+            <tr>
+              <td class="col-service">Post Cap Lights</td>
+              <td>Solar or low-voltage post cap lights on gate posts</td>
+              <td class="col-price">From $45 / light</td>
+            </tr>
+            <tr>
+              <td class="col-service">Double Drive Gate</td>
+              <td>Upgrade from single walk gate to double drive gate</td>
+              <td class="col-price">From $650 / gate</td>
+            </tr>
+            <tr>
+              <td class="col-service">Gate Automation</td>
+              <td>Keypad, remote, solar, or intercom access system</td>
+              <td class="col-price">From $1,800 / system</td>
+            </tr>
+            <tr>
+              <td class="col-service">Extended Warranty</td>
+              <td>25-year extended warranty (vs standard 15-year)</td>
+              <td class="col-price">5% of project cost</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4. FINANCING OPTIONS -->
+  <section id="financing" class="financing-bg">
+    <div class="container">
+      <div class="section-title-wrap">
+        <div class="badge">Financing</div>
+        <h2>Flexible Payment Options</h2>
+        <p>Don't let budget timing delay your project. Choose a financing plan that fits your cash flow.</p>
+      </div>
+
+      <div class="financing-grid">
+        <div class="financing-card">
+          <div class="financing-icon"><i class="fa-solid fa-percent"></i></div>
+          <h3>0% Interest — 12 Months</h3>
+          <div class="apr">0% APR</div>
+          <p>Pay your project off over 12 months with zero interest. Perfect for projects under $10,000.</p>
+          <div class="financing-meta">No prepayment penalty · Instant approval</div>
+        </div>
+
+        <div class="financing-card">
+          <div class="financing-icon"><i class="fa-solid fa-calendar-days"></i></div>
+          <h3>Low Monthly — 60 Months</h3>
+          <div class="apr">7.99% APR</div>
+          <p>Spread larger projects over 5 years with low fixed monthly payments. Great for full perimeter builds.</p>
+          <div class="financing-meta">Fixed rate · No origination fee</div>
+        </div>
+
+        <div class="financing-card">
+          <div class="financing-icon"><i class="fa-solid fa-hand-holding-dollar"></i></div>
+          <h3>Deferred Payment — 6 Months</h3>
+          <div class="apr">0% for 6 mo.</div>
+          <p>No payments for the first 6 months, then standard rate. Ideal if you're waiting on a bonus or tax refund.</p>
+          <div class="financing-meta">Soft credit check · Fast approval</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5. FAQ -->
+  <section id="pricing-faq" class="faq-bg">
+    <div class="container">
+      <div class="section-title-wrap">
+        <div class="badge">Common Questions</div>
+        <h2>Pricing & Estimate FAQ</h2>
+        <p>Quick answers to the questions we hear most about our quotes and pricing.</p>
+      </div>
+
+      <div class="faq-list">
+        <div class="faq-item open">
+          <div class="faq-question">
+            <span>Is the quote really fixed-price?</span>
+            <i class="fa-solid fa-chevron-down"></i>
+          </div>
+          <div class="faq-answer">
+            <p>Yes, 100% guaranteed. Once our technician completes the on-site laser measurement and you approve the itemized proposal, that exact price is locked for 60 full days. We absorb any hidden ground conditions or extra concrete needed—the price will never increase unless you explicitly request a scope change (such as adding extra gates or upgrading to premium post caps).</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Are permits and HOA approvals included?</span>
+            <i class="fa-solid fa-chevron-down"></i>
+          </div>
+          <div class="faq-answer">
+            <p>Yes. Standard municipal building permits, underground utility markouts (811 Call Before You Dig), and comprehensive HOA approval assistance are fully handled by our team. We generate stamped architectural review drawings, plat line markups, and material specification packets for your HOA board so you get hassle-free first-round approval.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Do you charge for the on-site measurement?</span>
+            <i class="fa-solid fa-chevron-down"></i>
+          </div>
+          <div class="faq-answer">
+            <p>Never. Our on-site consultation, digital laser boundary measurement, grade slope assessment, and physical material sample review are 100% free with zero sales pressure and no obligation. Your detailed quote is sent within 24 hours, and you have 60 days to decide.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>What's included in the per-foot price?</span>
+            <i class="fa-solid fa-chevron-down"></i>
+          </div>
+          <div class="faq-answer">
+            <p>Our transparent linear-foot pricing includes turnkey installation: post-hole augering 36"–42" deep, 120 lbs commercial concrete per post, premium pickets/panels, hot-dipped rustproof fasteners, one standard 4ft walk gate with heavy-duty latch hardware, full site cleanup, and our written craftsmanship warranty.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Can I get a quote without an on-site visit?</span>
+            <i class="fa-solid fa-chevron-down"></i>
+          </div>
+          <div class="faq-answer">
+            <p>We can give you an immediate ballpark estimate over the phone or via our online estimator tool using your estimated footage. However, to issue a guaranteed, fixed-price contract, an estimator visits to inspect elevation changes, ground hardness, tree roots, and utility lines so there are never surprise change orders later.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Do you offer discounts for large projects?</span>
+            <i class="fa-solid fa-chevron-down"></i>
+          </div>
+          <div class="faq-answer">
+            <p>Yes! We offer tiered volume discounts for residential properties over 250 linear feet, as well as a "Good Neighbor" discount when you and an adjacent neighbor replace shared property boundary fences at the same time. We also offer special discounts for military veterans, first responders, and senior citizens.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6. CTA -->
+  <section id="pricing-cta" class="cta-bg">
+    <div class="container">
+      <div class="cta-inner">
+        <div class="badge" style="background: rgba(194, 136, 72, 0.25);">Free Quote</div>
+        <h2>Get Your Fixed-Price Quote Today</h2>
+        <p>Book a free on-site measurement and receive an itemized, no-obligation quote within 24 hours. No pressure, no hidden fees, no surprises.</p>
+        <div class="cta-actions">
+          <a href="contact.html#measurement" class="btn btn-primary"><i class="fa-solid fa-ruler-combined"></i> Book Free Measurement</a>
+          <a href="services.html" class="btn btn-outline"><i class="fa-solid fa-screwdriver-wrench"></i> Explore Services</a>
+        </div>
+        <div class="cta-features">
+          <div class="cta-feature"><i class="fa-solid fa-check-circle"></i> Fixed-price quote in 24 hrs</div>
+          <div class="cta-feature"><i class="fa-solid fa-check-circle"></i> No hidden fees</div>
+          <div class="cta-feature"><i class="fa-solid fa-check-circle"></i> 60-day price lock</div>
+          <div class="cta-feature"><i class="fa-solid fa-check-circle"></i> Free on-site measure</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER (same as index) -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <a href="index.html" class="brand-logo" style="color: #fff; margin-bottom: 1rem; display: inline-flex;">
+            <i class="fa-solid fa-vector-square" style="color: var(--secondary);"></i>
+            <span>Apex<span>Fence</span></span>
+          </a>
+          <p>Your trusted fencing partner for over 25 years. Delivering master post setting, premium materials, and prompt professional service across residential, agricultural, and commercial properties.</p>
+          <div class="footer-socials">
+            <a href="#" class="social-btn" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#" class="social-btn" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" class="social-btn" aria-label="Houzz"><i class="fa-brands fa-houzz"></i></a>
+            <a href="#" class="social-btn" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Quick Navigation</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="home-2.html">Home (Repair)</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="fence-styles.html">Fence Styles</a></li>
+            <li><a href="materials.html">Materials Catalog</a></li>
+            <li><a href="services.html">Installation & Repair</a></li>
+            <li><a href="pricing.html">Pricing & Estimates</a></li>
+            <li><a href="gallery.html">Gallery & Projects</a></li>
+            <li><a href="contact.html">Free Measurement Form</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Fence Styles</h4>
+          <ul class="footer-links">
+            <li><a href="fence-styles.html">Western Cedar Privacy</a></li>
+            <li><a href="fence-styles.html">Modern Horizontal Slats</a></li>
+            <li><a href="fence-styles.html">Powder Aluminum Estate</a></li>
+            <li><a href="fence-styles.html">Virgin Vinyl Privacy</a></li>
+            <li><a href="fence-styles.html">Black Chain Link</a></li>
+            <li><a href="services.html">Automated Security Gates</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Showroom & Service Area</h4>
+          <p><i class="fa-solid fa-map-pin" style="color: var(--secondary); margin-right: 0.5rem;"></i> 742 Timberline Blvd, Metro Area</p>
+          <p><i class="fa-solid fa-phone" style="color: var(--secondary); margin-right: 0.5rem;"></i> 24/7 Hotline: (800) 555-FENCE</p>
+          <p><i class="fa-solid fa-envelope" style="color: var(--secondary); margin-right: 0.5rem;"></i> estimates@apexfencesolutions.com</p>
+          <div style="margin-top: 1rem; padding: 0.75rem; background: rgba(255,255,255,0.05); border-radius: 8px;">
+            <small style="color: var(--secondary); font-weight: 700;">PROUD MEMBER OF:</small><br>
+            <span style="font-size: 0.8rem; color: #fff;">American Fence Association (AFA)</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>&copy; 2026 Apex Fence Solutions Inc. All rights reserved. Licensed Contractor #FC-892401.</div>
+        <div style="display: flex; gap: 1.2rem; flex-wrap: wrap;">
+          <a href="contact.html">Privacy Policy</a>
+          <a href="contact.html">Terms of Warranty</a>
+          <a href="contact.html">Sitemap</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    /* ===== HAMBURGER NAV ===== */
+    const menuToggle = document.getElementById('menuToggle');
+    const navMenu = document.getElementById('navMenu');
+
+    menuToggle.addEventListener('click', (e) => {
+      e.stopPropagation();
+      navMenu.classList.toggle('mobile-open');
+      const icon = menuToggle.querySelector('i');
+      if (navMenu.classList.contains('mobile-open')) {
+        icon.classList.remove('fa-bars');
+        icon.classList.add('fa-xmark');
+      } else {
+        icon.classList.remove('fa-xmark');
+        icon.classList.add('fa-bars');
+      }
+    });
+
+    document.querySelectorAll('.nav-link, .dropdown-item, .nav-drawer-actions .btn').forEach(link => {
+      link.addEventListener('click', () => {
+        navMenu.classList.remove('mobile-open');
+        const icon = menuToggle.querySelector('i');
+        if (icon) {
+          icon.classList.remove('fa-xmark');
+          icon.classList.add('fa-bars');
+        }
+      });
+    });
+
+    document.addEventListener('click', (e) => {
+      if (navMenu.classList.contains('mobile-open')) {
+        if (!navMenu.contains(e.target) && !menuToggle.contains(e.target)) {
+          navMenu.classList.remove('mobile-open');
+          const icon = menuToggle.querySelector('i');
+          if (icon) {
+            icon.classList.remove('fa-xmark');
+            icon.classList.add('fa-bars');
+          }
+        }
+      }
+    });
+
+    /* ===== FAQ ACCORDION TOGGLE ===== */
+    const faqQuestions = document.querySelectorAll('.faq-question');
+    faqQuestions.forEach(question => {
+      question.addEventListener('click', () => {
+        const item = question.closest('.faq-item');
+        const isOpen = item.classList.contains('open');
+
+        // Close other items
+        document.querySelectorAll('.faq-item').forEach(otherItem => {
+          if (otherItem !== item) {
+            otherItem.classList.remove('open');
+          }
+        });
+
+        // Toggle clicked item
+        item.classList.toggle('open', !isOpen);
+      });
+    });
+
+    /* ===== THEME TOGGLE (DARK / LIGHT) ===== */
+    const themeToggle = document.getElementById('themeToggle');
+    const themeIcon = themeToggle.querySelector('i');
+    const body = document.body;
+
+    function applyTheme(theme) {
+      if (theme === 'dark') {
+        body.classList.add('dark-mode');
+        themeIcon.classList.remove('fa-moon');
+        themeIcon.classList.add('fa-sun');
+        themeToggle.setAttribute('title', 'Switch to Light Mode');
+      } else {
+        body.classList.remove('dark-mode');
+        themeIcon.classList.remove('fa-sun');
+        themeIcon.classList.add('fa-moon');
+        themeToggle.setAttribute('title', 'Switch to Dark Mode');
+      }
+    }
+
+    const savedTheme = localStorage.getItem('apex-theme');
+    if (savedTheme) {
+      applyTheme(savedTheme);
+    } else {
+      applyTheme('light');
+    }
+
+    themeToggle.addEventListener('click', () => {
+      const isDark = body.classList.contains('dark-mode');
+      const newTheme = isDark ? 'light' : 'dark';
+      applyTheme(newTheme);
+      localStorage.setItem('apex-theme', newTheme);
+    });
+
+    /* ===== RTL / LTR TOGGLE ===== */
+    const rtlToggle = document.getElementById('rtlToggle');
+    const htmlEl = document.documentElement;
+
+    function applyDir(dir) {
+      htmlEl.setAttribute('dir', dir);
+      if (dir === 'rtl') {
+        rtlToggle.classList.add('active');
+        rtlToggle.setAttribute('title', 'Switch to LTR');
+      } else {
+        rtlToggle.classList.remove('active');
+        rtlToggle.setAttribute('title', 'Switch to RTL');
+      }
+    }
+
+    const savedDir = localStorage.getItem('apex-dir');
+    if (savedDir) {
+      applyDir(savedDir);
+    }
+
+    rtlToggle.addEventListener('click', () => {
+      const currentDir = htmlEl.getAttribute('dir');
+      const newDir = currentDir === 'rtl' ? 'ltr' : 'rtl';
+      applyDir(newDir);
+      localStorage.setItem('apex-dir', newDir);
+    });
+  </script>
+</body>
+</html>
